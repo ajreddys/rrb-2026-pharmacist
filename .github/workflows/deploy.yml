@@ -1,6 +1,6 @@
-# Publishes the brochure to GitHub Pages (rrb2026.pharmakaksha.com)
+# Publishes the brochure to GitHub Pages (rrb26.pharmakaksha.com)
 # every time you push to the main branch.
-name: Deploy rrb2026.pharmakaksha.com
+name: Deploy rrb26.pharmakaksha.com
 
 on:
   push:

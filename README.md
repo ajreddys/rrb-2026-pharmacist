@@ -1,18 +1,18 @@
 # RRB Pharmacist (CEN 05/2026) brochure
 
-Interactive one-page brochure for the Pharmakaksha batch for the Railway Recruitment Boards' Pharmacist (Entry Grade) computer-based test under CEN 05/2026 (Paramedical Categories). Live at **https://rrb2026.pharmakaksha.com/**.
+Interactive one-page brochure for the Pharmakaksha batch for the Railway Recruitment Boards' Pharmacist (Entry Grade) computer-based test under CEN 05/2026 (Paramedical Categories). Live at **https://rrb26.pharmakaksha.com/**.
 
 It is styled as an editorial poster: cream, deep red and black, a giant "118" hero, huge condensed numerals and italic serif asides. Dates and plan weeks show their status (open now, upcoming, done) as the dates pass. It prints cleanly to PDF (no sticky bars, every syllabus group open). It has a countdown to the next important date, an index bar, the official dates, posts by RRB, eligibility and age limits, the application fee, the selection steps, the paper pattern, a +1 / −⅓ score calculator, a guessing guide, what the batch includes, the official syllabus, a week-by-week study plan, fees with offers, contact details and social links. It is a single static `index.html`, so no build step is needed.
 
 ## Editing the details
 
-Open `index.html` and find `const CONFIG` near the bottom. It holds the fee and offers, the registration close date, batch start, the CBT date, contact links, the share message and the Cloudflare analytics token.
+Open `index.html` and find `const CONFIG` near the bottom. It holds the fee and offers, the registration close date, batch start, the CBT date, contact links and the share message.
 
 - **CBT date:** RRB has not announced it yet. When it does, set `exam`, for example `"2027-01-20T09:00:00+05:30"`. The countdown, the "CBT date" field and the exam row in the plan then use it.
 - **Countdown dates:** `MILESTONES`, just below `CONFIG`. The hero and sticky bar count down to the soonest upcoming one.
 - **Study plan:** the `PLAN` list further down, one entry per week.
 - **Links:** the register, chat, channel and email links are also written into the HTML, so they work even if the script fails. If you change one in `CONFIG`, change it in the HTML too (search for the old URL).
-- **Analytics:** `cfAnalyticsToken` holds the Cloudflare Web Analytics token for `rrb2026.pharmakaksha.com`. The beacon loads only on that hostname, so local previews aren't counted. Set it to `""` to turn analytics off.
+- **Analytics:** the Cloudflare Web Analytics snippet sits just before `</body>` in `index.html`. To turn analytics off, delete that one line.
 
 After 31 Oct (`regClose`) the page switches by itself: the status badge says closed, the free-trial card hides and the Register buttons become "Ask about the next batch" and open the WhatsApp chat.
 
@@ -36,10 +36,10 @@ git add -A && git commit -m "Update brochure" && git push
 
 Progress shows under the repository's **Actions** tab.
 
-### Custom domain: rrb2026.pharmakaksha.com
+### Custom domain: rrb26.pharmakaksha.com
 
-The `CNAME` file already contains `rrb2026.pharmakaksha.com`.
-The DNS record (Type `CNAME`, Host `rrb2026`, Value `ajreddys.github.io`) is in place, and the custom domain is set in **Settings → Pages**. Once GitHub has issued the certificate, tick **Enforce HTTPS** there if it isn't on already.
+The `CNAME` file already contains `rrb26.pharmakaksha.com`.
+The DNS record (Type `CNAME`, Host `rrb26`, Value `ajreddys.github.io`) is in place, and the custom domain is set in **Settings → Pages**. Once GitHub has issued the certificate, tick **Enforce HTTPS** there if it isn't on already.
 
 ## Files
 
@@ -48,7 +48,7 @@ The DNS record (Type `CNAME`, Host `rrb2026`, Value `ajreddys.github.io`) is in 
 | `index.html` | The brochure page (styles and script included) |
 | `logo.jpg` | Pharmakaksha logo, used in the header and as the favicon |
 | `og-image.jpg` | Link preview card |
-| `CNAME` | The custom domain `rrb2026.pharmakaksha.com` |
+| `CNAME` | The custom domain `rrb26.pharmakaksha.com` |
 | `.nojekyll` | Tells GitHub Pages to serve the files as they are |
 | `.github/workflows/deploy.yml` | Deploys the site files to GitHub Pages |
 | `templates/` | Alternative designs (modern ed-tech app, departure board, railway ticket), not deployed. See `templates/README.md` for reusing one in a new project |

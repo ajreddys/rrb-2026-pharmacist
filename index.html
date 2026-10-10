@@ -3,16 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#b3121e">
+<meta name="theme-color" content="#a8413c">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://rrb2026.pharmakaksha.com/">
+<meta property="og:url" content="https://rrb26.pharmakaksha.com/">
 <meta property="og:site_name" content="Pharmakaksha">
-<meta property="og:image" content="https://rrb2026.pharmakaksha.com/og-image.jpg?v=3">
+<meta property="og:image" content="https://rrb26.pharmakaksha.com/og-image.jpg?v=4">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Pharmakaksha: 118 RRB Pharmacist posts. One CBT. One RRB. Try Day 1 free, fee from ₹1,999, registrations close 31 Oct.">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="canonical" href="https://rrb2026.pharmakaksha.com/">
+<link rel="canonical" href="https://rrb26.pharmakaksha.com/">
 <meta property="og:title" content="Pharmakaksha · RRB Pharmacist (CEN 05/2026) CBT batch">
 <meta property="og:description" content="118 posts. Try Day 1 free. Registrations close 31 Oct.">
 <link rel="icon" href="logo.jpg">
@@ -25,7 +25,7 @@
 /* Layout: an editorial poster. Cream paper, deep red and black blocks, huge condensed numerals, italic serif asides. */
 :root{
   --paper:#f3ead8; --paper2:#ebe0c9; --ink:#161210; --muted:#5e554a; --line:#cfc2a8;
-  --red:#b3121e; --red-ink:#f3ead8; --green:#1d6b3f;
+  --red:#a8413c; --red-ink:#f3ead8; --green:#1d6b3f;
   --display:"Anton", "Impact", "Arial Narrow", sans-serif;
   --serif:"Instrument Serif", Georgia, serif;
   --body:"Archivo", "Segoe UI", system-ui, sans-serif;
@@ -92,12 +92,22 @@ em,.it{font-family:var(--serif);font-style:italic;font-weight:400}
 .stats span{font:800 .66rem/1.3 var(--body);letter-spacing:.12em;text-transform:uppercase}
 
 /* Index */
-.toc{position:sticky;top:var(--bh,61px);z-index:7;background:var(--paper);margin:-24px -16px 0;padding:10px 16px;border-bottom:1px solid var(--ink)}
-.toc ol{list-style:none;margin:0;padding:0;display:flex;gap:18px;overflow-x:auto;scrollbar-width:none}
+.toc{position:sticky;top:var(--bh,61px);z-index:7;background:var(--paper);margin:-24px -16px 0;padding:8px 16px;border-bottom:1px solid var(--ink)}
+.toc ol{list-style:none;margin:0;padding:0;display:flex;gap:6px;overflow-x:auto;scrollbar-width:none}
 .toc ol::-webkit-scrollbar{display:none}
-.toc a{white-space:nowrap;text-decoration:none;font:800 .78rem/1 var(--body);letter-spacing:.1em;text-transform:uppercase;color:var(--ink);padding:6px 0;border-bottom:3px solid transparent}
+.toc a{display:block;white-space:nowrap;text-decoration:none;font:800 .76rem/1 var(--body);letter-spacing:.1em;text-transform:uppercase;color:var(--ink);padding:8px 10px;border:2px solid transparent;transition:background .2s,color .2s}
 .toc a span{color:var(--red);margin-right:6px}
-.toc a[aria-current="true"]{border-color:var(--red)}
+.toc a[aria-current="true"]{background:var(--red);border-color:var(--red);color:var(--red-ink)}
+.toc a[aria-current="true"] span{color:inherit}
+/* "You are here" line and reading progress */
+.here{display:flex;align-items:baseline;gap:6px;margin:6px 0 0;font:400 .98rem/1.3 var(--serif);font-style:italic;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:none}
+.here[hidden]{display:none}
+.here .here-l{font:800 .6rem/1 var(--body);font-style:normal;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.here b{font:400 1rem/1 var(--display);font-style:normal;color:var(--red);text-transform:uppercase;letter-spacing:.02em}
+.here #here-sub:not(:empty)::before{content:"›  ";font-style:normal;color:var(--muted)}
+.prog{position:absolute;left:0;bottom:-1px;height:3px;width:var(--p,0%);background:var(--red);transition:width .1s linear}
+.block > h3{transition:color .2s,border-color .2s}
+.block.on > h3{color:var(--red);border-color:var(--red)}
 section{display:flex;flex-direction:column;gap:20px;scroll-margin-top:calc(var(--bh,61px) + 56px)}
 
 /* Section openers */
@@ -136,7 +146,7 @@ section{display:flex;flex-direction:column;gap:20px;scroll-margin-top:calc(var(-
 .posts li:first-child b{color:var(--red)}
 .callout{background:var(--ink);color:var(--paper);padding:20px 18px;display:flex;flex-direction:column;gap:8px}
 .callout strong{font:400 clamp(1.9rem,7vw,2.8rem)/1 var(--display);text-transform:uppercase}
-.callout strong span{color:#ff6b5e}
+.callout strong span{color:#f2988c}
 .callout p{color:rgba(243,234,216,.85);font-size:.97rem}
 
 /* Eligibility */
@@ -236,7 +246,7 @@ details ul{margin:0;padding:0 0 14px 20px;display:flex;flex-direction:column;gap
 .wk .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
 .wk .tags .tag{margin:0}
 .wk.now .no{color:var(--red);-webkit-text-stroke:0}
-.wk.now{background:linear-gradient(90deg,rgba(179,18,30,.07),transparent)}
+.wk.now{background:linear-gradient(90deg,rgba(168,65,60,.07),transparent)}
 .wk.gone{opacity:.45}
 .wk.mock{background:var(--ink);color:var(--paper);padding:18px 14px;margin-top:4px}
 .wk.mock .no{-webkit-text-stroke:0;color:var(--red);font-size:3rem}
@@ -285,7 +295,7 @@ details ul{margin:0;padding:0 0 14px 20px;display:flex;flex-direction:column;gap
 .sticky{position:fixed;left:0;right:0;bottom:0;z-index:9;background:var(--ink);color:var(--paper);padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));display:flex;justify-content:center}
 .sticky-in{max-width:860px;width:100%;display:flex;align-items:center;justify-content:space-between;gap:12px}
 .sticky-in > span{font:400 1rem/1.2 var(--serif);font-style:italic}
-.sticky-in > span b{font:400 1.6rem/1 var(--display);font-style:normal;color:#ff6b5e;margin-right:4px}
+.sticky-in > span b{font:400 1.6rem/1 var(--display);font-style:normal;color:#f2988c;margin-right:4px}
 .sticky .cta{flex-wrap:nowrap;gap:8px;flex:none}
 .sticky .btn{background:var(--red);color:var(--red-ink)}
 .sticky .btn.ghost{background:transparent;border-color:var(--paper);color:var(--paper)}
@@ -346,6 +356,8 @@ details ul{margin:0;padding:0 0 14px 20px;display:flex;flex-direction:column;gap
       <li><a href="#plan"><span>05</span>Study plan</a></li>
       <li><a href="#enrol"><span>→</span>Join</a></li>
     </ol>
+    <p class="here" id="here" aria-live="polite" hidden><span class="here-l">You are here</span> <b id="here-sec"></b><span id="here-sub"></span></p>
+    <i class="prog" id="prog" aria-hidden="true"></i>
   </nav>
 
   <!-- 01 About -->
@@ -612,9 +624,8 @@ const CONFIG = {
   chat: "https://wa.me/message/76WJAZO5A3NEB1",                       // chat to register
   email: "support@pharmakaksha.com",
   register: "https://pharmakaksha.com", // where "Register now" goes
-  url: "https://rrb2026.pharmakaksha.com/",
-  shareText: "RRB Pharmacist CBT (CEN 05/2026): 118 posts. Pharmakaksha's batch has daily tests, 5 full-length mock CBTs and a week-by-week plan:",
-  cfAnalyticsToken: "a1186335401f4b0e80edd9c4b94f9c28"  // Cloudflare Web Analytics token for rrb2026.pharmakaksha.com; "" turns it off
+  url: "https://rrb26.pharmakaksha.com/",
+  shareText: "RRB Pharmacist CBT (CEN 05/2026): 118 posts. Pharmakaksha's batch has daily tests, 5 full-length mock CBTs and a week-by-week plan:"
 };
 
 /* Dates the hero countdown and the sticky bar count down to, soonest first.
@@ -667,14 +678,6 @@ document.querySelectorAll("a.reglink").forEach(a => {
   if (label) label.textContent = "Ask about the next batch";
 });
 if (!open) $("trial").hidden = true;
-
-// Privacy-friendly analytics: no cookies, no personal data. Loads only on the live site.
-if (CONFIG.cfAnalyticsToken && location.hostname === new URL(CONFIG.url).hostname) {
-  const b = document.createElement("script");
-  b.defer = true; b.src = "https://static.cloudflareinsights.com/beacon.min.js";
-  b.dataset.cfBeacon = JSON.stringify({ token: CONFIG.cfAnalyticsToken });
-  document.head.appendChild(b);
-}
 
 // Countdown to the soonest upcoming date; the CBT joins once CONFIG.exam is set.
 const targets = MILESTONES.concat(CONFIG.exam ? [{ at: CONFIG.exam, label: "the Pharmacist CBT", short: "the CBT" }] : [])
@@ -802,18 +805,40 @@ addEventListener("beforeprint", () => document.querySelectorAll("details").forEa
 // The plan rows shift the page after load, so re-land on a #section link.
 try { if (location.hash) document.querySelector(location.hash)?.scrollIntoView({ behavior: "instant" }); } catch (e) {}
 
-// Index: mark the link for the section currently in view.
-const chips = [...document.querySelectorAll(".toc a")];
-const spy = new IntersectionObserver(es => es.forEach(e => {
-  if (!e.isIntersecting) return;
+// Where am I: on scroll, mark the section under the index bar (filled tab), name it and its
+// sub-section in the "You are here" line, highlight that sub-section's heading and fill the progress bar.
+const toc = document.querySelector(".toc");
+const chips = [...toc.querySelectorAll("a")];
+const secs = chips.map(c => document.querySelector(c.hash)).filter(Boolean);
+const names = { enrol: "Join the batch" };
+let lastSec = null, lastBlock = null;
+function whereAmI(){
+  const line = toc.getBoundingClientRect().bottom + 24;   // the reading line, just below the sticky bars
+  const sec = secs.filter(s => s.getBoundingClientRect().top <= line).pop() || null;
+  const block = sec ? [...sec.querySelectorAll(":scope > .block")].filter(b => b.getBoundingClientRect().top <= line).pop() || null : null;
+  const max = document.documentElement.scrollHeight - innerHeight;
+  $("prog").style.setProperty("--p", (max > 0 ? Math.min(100, scrollY / max * 100) : 0).toFixed(1) + "%");
+  if (sec === lastSec && block === lastBlock) return;
+  lastSec = sec; lastBlock = block;
   chips.forEach(c => {
-    const on = c.hash === "#" + e.target.id;
+    const on = !!sec && c.hash === "#" + sec.id;
     c.setAttribute("aria-current", on);
     if (on) { const ol = c.closest("ol"), cr = c.getBoundingClientRect(), or = ol.getBoundingClientRect();
-      if (cr.left < or.left || cr.right > or.right) ol.scrollBy({ left: cr.left - or.left - 8 }); }
+      if (cr.left < or.left || cr.right > or.right) ol.scrollBy({ left: cr.left - or.left - 8, behavior: "smooth" }); }
   });
-}), { rootMargin: "-40% 0px -55% 0px" });
-chips.forEach(c => { const t = document.querySelector(c.hash); if (t) spy.observe(t); });
+  document.querySelectorAll(".block.on").forEach(b => b.classList.remove("on"));
+  if (block) block.classList.add("on");
+  $("here").hidden = !sec;
+  if (sec) {
+    const chip = chips.find(c => c.hash === "#" + sec.id);
+    $("here-sec").textContent = names[sec.id] || chip.textContent.replace(/^\d+/, m => m + " ");
+    $("here-sub").textContent = block ? block.querySelector("h3").textContent : "";
+  }
+}
+addEventListener("scroll", whereAmI, { passive: true });
+addEventListener("resize", whereAmI);
+whereAmI();
 </script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "a1186335401f4b0e80edd9c4b94f9c28"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
