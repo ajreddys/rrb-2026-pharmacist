@@ -2,7 +2,7 @@
 
 Interactive one-page brochure for the Pharmakaksha batch for the Railway Recruitment Boards' Pharmacist (Entry Grade) computer-based test under CEN 05/2026 (Paramedical Categories). Live at **https://rrb2026.pharmakaksha.com/**.
 
-It has a countdown to the next important date, an index bar, the official dates, posts by RRB, eligibility and age limits, the application fee, the selection steps, the paper pattern, a +1 / −⅓ score calculator, a guessing guide, what the batch includes, the official syllabus, a week-by-week study plan, fees with offers, contact details and social links. It is a single static `index.html`, so no build step is needed.
+It is styled as a station departure board: split-flap tiles, a live IST clock, a scrolling ticker, and timetables whose rows show DEPARTED / BOARDING / ON TIME as the dates pass. It has a countdown to the next important date, an index bar, the official dates, posts by RRB, eligibility and age limits, the application fee, the selection steps, the paper pattern, a +1 / −⅓ score calculator, a guessing guide, what the batch includes, the official syllabus, a week-by-week study plan, fees with offers, contact details and social links. It is a single static `index.html`, so no build step is needed.
 
 ## Editing the details
 
@@ -28,20 +28,18 @@ Then bump `?v=1` on the `og:image` URL in `index.html` so apps fetch the new car
 
 ## Publish on GitHub Pages
 
-1. On GitHub, create a **public** repository, for example `ajreddys/rrb-2026-pharmacist`.
-2. From this folder:
-   ```bash
-   git remote add origin https://github.com/ajreddys/rrb-2026-pharmacist.git
-   git push -u origin main
-   ```
-3. In the repository, go to **Settings → Pages** and set **Source = GitHub Actions**. The workflow in `.github/workflows/deploy.yml` publishes on every push to `main`.
+The repository is `ajreddys/rrb-2026-pharmacist`. Pages is set to **Source = GitHub Actions**, and the workflow in `.github/workflows/deploy.yml` publishes on every push to `main`:
+
+```bash
+git add -A && git commit -m "Update brochure" && git push
+```
+
+Progress shows under the repository's **Actions** tab.
 
 ### Custom domain: rrb2026.pharmakaksha.com
 
 The `CNAME` file already contains `rrb2026.pharmakaksha.com`.
-1. At your domain provider, add a DNS record: Type `CNAME`, Host `rrb2026`, Value `ajreddys.github.io`.
-2. In the repository, go to **Settings → Pages**, enter `rrb2026.pharmakaksha.com` as the **Custom domain** and save.
-3. Once the DNS check passes, tick **Enforce HTTPS**.
+The DNS record (Type `CNAME`, Host `rrb2026`, Value `ajreddys.github.io`) is in place, and the custom domain is set in **Settings → Pages**. Once GitHub has issued the certificate, tick **Enforce HTTPS** there if it isn't on already.
 
 ## Files
 
@@ -53,6 +51,7 @@ The `CNAME` file already contains `rrb2026.pharmakaksha.com`.
 | `CNAME` | The custom domain `rrb2026.pharmakaksha.com` |
 | `.nojekyll` | Tells GitHub Pages to serve the files as they are |
 | `.github/workflows/deploy.yml` | Deploys the site files to GitHub Pages |
+| `templates/ticket.html` | The earlier "railway ticket" design, kept as a fallback (not deployed). To switch back, copy it over `index.html` and change `../logo.jpg` to `logo.jpg` |
 | `marketing/` | WhatsApp Status image, plus the HTML sources and render script for both images (not deployed) |
 
 ## Source
