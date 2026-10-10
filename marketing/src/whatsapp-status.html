@@ -2,66 +2,59 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<!-- Source for marketing/whatsapp-status-1080x1920.jpg, departure-board style. Render with: marketing/src/render.sh -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700;800&display=swap">
+<!-- Source for marketing/whatsapp-status-1080x1920.jpg, editorial-poster style. Render with: marketing/src/render.sh -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@600;800&family=Instrument+Serif:ital@0;1&display=swap">
 <style>
 *{box-sizing:border-box;margin:0}
-body{width:1080px;height:1920px;background:#0a0b0d;color:#ebe7df;font-family:"JetBrains Mono",monospace;padding:150px 64px 0;display:flex;flex-direction:column;gap:40px;overflow:hidden}
-.brand{display:flex;align-items:center;gap:24px}
-.brand img{width:100px;height:100px;border-radius:50%;background:#fff;padding:4px}
-.brand b{display:block;font-weight:800;font-size:40px;letter-spacing:.06em}
-.brand span{font-size:26px;color:#9a9ea6}
-.board{background:#121417;border:2px solid #33383f;border-radius:22px;overflow:hidden}
-.head{background:#000;display:flex;justify-content:space-between;padding:18px 32px;font-weight:700;font-size:22px;letter-spacing:.14em;color:#9a9ea6;border-bottom:2px solid #33383f}
-.head .live{color:#3ddc84}
-.body{padding:32px;display:flex;flex-direction:column;gap:16px}
-.flaps{display:flex;gap:20px;flex-wrap:wrap}
-.w{display:flex;gap:4px}
-.f{width:46px;height:68px;display:grid;place-items:center;font-weight:800;font-size:44px;border-radius:6px;background:linear-gradient(#24282d 0 49.5%,#050607 49.5% 50.5%,#1b1e22 50.5%)}
-.amber .f{color:#ffb400}
-.specs{display:grid;grid-template-columns:1fr 1fr;border-top:2px dashed #33383f;padding-top:22px;margin-top:8px}
-.specs small{display:block;font-weight:700;font-size:20px;letter-spacing:.16em;color:#9a9ea6;margin-bottom:6px}
-.specs strong{font-weight:800;font-size:32px}
-.trial{background:#ffb400;color:#111;border-radius:22px;padding:32px 36px;display:flex;flex-direction:column;gap:14px}
-.trial small{font-weight:800;font-size:22px;letter-spacing:.18em;color:#5a3e00}
-.trial b{font-weight:800;font-size:66px;letter-spacing:-.02em}
-.trial ul{list-style:none;padding:0;display:flex;flex-direction:column;gap:8px;font-weight:700;font-size:32px}
-.trial li::before{content:"✓ "}
-.fares{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.fare{background:#121417;border:2px solid #33383f;border-radius:20px;padding:28px}
-.fare small{display:block;font-weight:700;font-size:20px;letter-spacing:.14em;color:#9a9ea6;margin-bottom:12px}
-.fare b{display:block;font-weight:800;font-size:64px;color:#ffb400;letter-spacing:-.03em}
-.fare span{display:inline-block;margin-top:14px;font-weight:800;font-size:26px;color:#ffb400;border:2px dashed #ffb400;border-radius:8px;padding:6px 12px}
-.fare p{margin-top:14px;font-size:26px;color:#9a9ea6}
-.foot{display:flex;flex-direction:column;align-items:center;gap:20px}
-.close{font-weight:800;font-size:30px;color:#3ddc84;border:2px solid #3ddc84;border-radius:10px;padding:10px 18px}
-.close::before{content:"● "}
-.url{background:#3ddc84;color:#04130a;font-weight:800;font-size:46px;padding:28px 44px;border-radius:14px}
+body{width:1080px;height:1920px;background:#f3ead8;color:#161210;font-family:"Archivo",sans-serif;display:flex;flex-direction:column;overflow:hidden}
+.mast{display:flex;align-items:center;gap:20px;padding:110px 70px 28px;border-bottom:6px solid #161210}
+.mast img{width:90px;height:90px;border-radius:50%;background:#fff;padding:4px;border:2px solid #161210}
+.mast b{font-family:"Anton";font-weight:400;font-size:52px;letter-spacing:.04em}
+.mast span{margin-left:auto;text-align:right;font-weight:800;font-size:22px;letter-spacing:.12em;line-height:1.4}
+.mast span i{display:block;font-style:normal;color:#b3121e}
+.red{background:#b3121e;color:#f3ead8;padding:44px 70px 50px}
+.kick{font-weight:800;font-size:24px;letter-spacing:.16em;border-bottom:2px solid rgba(243,234,216,.45);padding-bottom:18px}
+.big{font-family:"Anton";font-size:420px;line-height:.92;letter-spacing:-.02em;margin-top:18px}
+h1{font-family:"Anton";font-weight:400;font-size:104px;line-height:.92;text-transform:uppercase;margin-top:8px}
+.it{font-family:"Instrument Serif";font-style:italic;font-size:54px;margin-top:14px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);margin:0 70px;border-bottom:6px solid #161210}
+.stats div{padding:24px 0 20px}
+.stats div + div{border-left:2px solid #161210;padding-left:24px}
+.stats b{display:block;font-family:"Anton";font-weight:400;font-size:96px;line-height:.9}
+.stats small{font-weight:800;font-size:22px;letter-spacing:.12em}
+.offer{margin:34px 70px 0;display:grid;grid-template-columns:1fr 1fr;border-top:2px solid #161210}
+.offer div{padding:22px 0}
+.offer div + div{border-left:1px solid #cfc2a8;padding-left:24px}
+.offer small{font-weight:800;font-size:21px;letter-spacing:.14em}
+.offer b{display:block;font-family:"Anton";font-weight:400;font-size:92px;line-height:1;color:#b3121e}
+.offer em{font-family:"Instrument Serif";font-size:32px;color:#5e554a}
+.offer span{display:inline-block;margin-top:8px;background:#161210;color:#f3ead8;font-weight:800;font-size:26px;letter-spacing:.1em;padding:8px 14px}
+.foot{margin:auto 70px 110px;display:flex;flex-direction:column;gap:18px}
+.foot .close{font-family:"Instrument Serif";font-style:italic;font-size:42px}
+.foot .close b{font-family:"Anton";font-style:normal;font-weight:400;color:#b3121e}
+.url{background:#161210;color:#f3ead8;font-weight:800;font-size:44px;letter-spacing:.06em;padding:30px;text-align:center}
 </style>
 </head>
 <body>
-  <div class="brand"><img src="../../logo.jpg" alt=""><div><b>PHARMAKAKSHA</b><span>Learn · Grow · Achieve</span></div></div>
-  <div class="board">
-    <div class="head"><span>RRB · CEN 05/2026</span><span class="live">● LIVE</span></div>
-    <div class="body" id="b"></div>
+  <div class="mast"><img src="../../logo.jpg" alt=""><b>PHARMAKAKSHA</b><span>CEN 05/2026<i>RRB PHARMACIST</i></span></div>
+  <div class="red">
+    <div class="kick">RAILWAY RECRUITMENT BOARDS · PHARMACIST BATCH</div>
+    <div class="big">118</div>
+    <h1>Pharmacist posts.<br>One CBT. One RRB.</h1>
+    <p class="it">Rank inside them, with Pharmakaksha.</p>
   </div>
-  <div class="trial">
-    <small>INTRODUCTORY OFFER</small>
-    <b>TRY DAY 1 FREE</b>
-    <ul><li>Day 1 study material</li><li>Day 1 daily test</li><li>A full-length mock test</li></ul>
+  <div class="stats">
+    <div><b>100</b><small>QUESTIONS</small></div>
+    <div><b>90</b><small>MINUTES</small></div>
+    <div><b>−⅓</b><small>PER WRONG</small></div>
   </div>
-  <div class="fares">
-    <div class="fare"><small>FARE · INDIVIDUAL</small><b>₹2,499</b><span>PROMO · PKRRB2026</span></div>
-    <div class="fare"><small>FARE · GROUP OF 4+</small><b>₹1,999</b><p>per person</p></div>
+  <div class="offer">
+    <div><small>INDIVIDUAL</small><b>₹2,499</b><span>PROMO · PKRRB2026</span></div>
+    <div><small>GROUP OF 4+</small><b>₹1,999</b><em>per person</em></div>
   </div>
   <div class="foot">
-    <div class="close">BOARDING · REGISTRATIONS CLOSE 31 OCT</div>
-    <div class="url">rrb2026.pharmakaksha.com</div>
+    <p class="close"><b>DAY 1 FREE</b> · registrations close 31 Oct</p>
+    <div class="url">RRB2026.PHARMAKAKSHA.COM</div>
   </div>
-<script>
-const tiles = (t, cls) => `<div class="flaps ${cls}">` + t.split(" ").map(w => `<span class="w">${[...w].map(c => `<span class="f">${c}</span>`).join("")}</span>`).join("") + `</div>`;
-document.getElementById("b").innerHTML = tiles("CRACK THE RRB", "") + tiles("PHARMACIST CBT", "") + tiles("RANK INSIDE THE 118", "amber") +
-  `<div class="specs"><div><small>POSTS</small><strong>118 · 20 RRBs</strong></div><div><small>PAPER</small><strong>100 Qs · +1/−⅓</strong></div></div>`;
-</script>
 </body>
 </html>

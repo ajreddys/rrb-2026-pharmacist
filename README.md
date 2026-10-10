@@ -2,7 +2,7 @@
 
 Interactive one-page brochure for the Pharmakaksha batch for the Railway Recruitment Boards' Pharmacist (Entry Grade) computer-based test under CEN 05/2026 (Paramedical Categories). Live at **https://rrb2026.pharmakaksha.com/**.
 
-It is styled as a station departure board: split-flap tiles, a live IST clock, a scrolling ticker, and timetables whose rows show DEPARTED / BOARDING / ON TIME as the dates pass. It has a countdown to the next important date, an index bar, the official dates, posts by RRB, eligibility and age limits, the application fee, the selection steps, the paper pattern, a +1 / −⅓ score calculator, a guessing guide, what the batch includes, the official syllabus, a week-by-week study plan, fees with offers, contact details and social links. It is a single static `index.html`, so no build step is needed.
+It is styled as an editorial poster: cream, deep red and black, a giant "118" hero, huge condensed numerals and italic serif asides. Dates and plan weeks show their status (open now, upcoming, done) as the dates pass. It prints cleanly to PDF (no sticky bars, every syllabus group open). It has a countdown to the next important date, an index bar, the official dates, posts by RRB, eligibility and age limits, the application fee, the selection steps, the paper pattern, a +1 / −⅓ score calculator, a guessing guide, what the batch includes, the official syllabus, a week-by-week study plan, fees with offers, contact details and social links. It is a single static `index.html`, so no build step is needed.
 
 ## Editing the details
 
@@ -51,7 +51,7 @@ The DNS record (Type `CNAME`, Host `rrb2026`, Value `ajreddys.github.io`) is in 
 | `CNAME` | The custom domain `rrb2026.pharmakaksha.com` |
 | `.nojekyll` | Tells GitHub Pages to serve the files as they are |
 | `.github/workflows/deploy.yml` | Deploys the site files to GitHub Pages |
-| `templates/ticket.html` | The earlier "railway ticket" design, kept as a fallback (not deployed). To switch back, copy it over `index.html` and change `../logo.jpg` to `logo.jpg` |
+| `templates/` | Alternative designs (modern ed-tech app, departure board, railway ticket), not deployed. See `templates/README.md` for reusing one in a new project |
 | `marketing/` | WhatsApp Status image, plus the HTML sources and render script for both images (not deployed) |
 
 ## Source

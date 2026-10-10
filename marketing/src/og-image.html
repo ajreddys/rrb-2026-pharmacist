@@ -2,52 +2,39 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<!-- Source for og-image.jpg (1200×630), departure-board style. Render with: marketing/src/render.sh -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700;800&display=swap">
+<!-- Source for og-image.jpg (1200×630), editorial-poster style. Render with: marketing/src/render.sh -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@600;800&family=Instrument+Serif:ital@0;1&display=swap">
 <style>
 *{box-sizing:border-box;margin:0}
-body{width:1200px;height:630px;background:#0a0b0d;color:#ebe7df;font-family:"JetBrains Mono",monospace;padding:34px 48px;display:flex;flex-direction:column;gap:30px;overflow:hidden}
-.top{display:flex;justify-content:space-between;align-items:center}
-.brand{display:flex;align-items:center;gap:16px}
-.brand img{width:62px;height:62px;border-radius:50%;background:#fff;padding:3px}
-.brand b{display:block;font-weight:800;font-size:25px;letter-spacing:.06em}
-.brand span{font-size:16px;color:#9a9ea6}
-.url{background:#3ddc84;color:#04130a;font-weight:800;font-size:19px;padding:13px 20px;border-radius:8px}
-.board{background:#121417;border:1px solid #33383f;border-radius:14px;overflow:hidden}
-.head{background:#000;display:flex;justify-content:space-between;padding:11px 24px;font-weight:700;font-size:15px;letter-spacing:.16em;color:#9a9ea6;border-bottom:1px solid #33383f}
-.head .live{color:#3ddc84}
-.body{padding:30px 24px;display:flex;flex-direction:column;gap:16px}
-.flaps{display:flex;gap:14px;flex-wrap:wrap}
-.w{display:flex;gap:4px}
-.f{width:37px;height:52px;display:grid;place-items:center;font-weight:800;font-size:36px;border-radius:5px;background:linear-gradient(#24282d 0 49.5%,#050607 49.5% 50.5%,#1b1e22 50.5%)}
-.amber .f{color:#ffb400}
-.row{display:flex;gap:14px;height:150px}
-.cell{background:#121417;border:1px solid #33383f;border-radius:12px;padding:16px 20px;display:flex;flex-direction:column;justify-content:center;gap:6px}
-.cell small{font-weight:700;font-size:13px;letter-spacing:.16em;color:#9a9ea6}
-.cell b{font-weight:800;font-size:44px;color:#ffb400}
-.trial{flex:1;background:#ffb400;color:#111;border:0}
-.trial small{color:#5a3e00}
-.trial b{color:#111;font-size:52px}
-.ok b{color:#3ddc84}
+body{width:1200px;height:630px;background:#f3ead8;color:#161210;font-family:"Archivo",sans-serif;display:grid;grid-template-columns:690px 1fr;overflow:hidden}
+.red{background:#b3121e;color:#f3ead8;padding:34px 40px;display:flex;flex-direction:column;justify-content:space-between}
+.kick{font-weight:800;font-size:15px;letter-spacing:.16em;border-bottom:1px solid rgba(243,234,216,.45);padding-bottom:12px}
+.big{font-family:"Anton";font-size:300px;line-height:.78;letter-spacing:-.02em;margin-top:6px}
+h1{font-family:"Anton";font-weight:400;font-size:62px;line-height:.95;text-transform:uppercase}
+.it{font-family:"Instrument Serif";font-style:italic;font-size:34px;margin-top:6px}
+.side{padding:34px 40px;display:flex;flex-direction:column;gap:20px}
+.brand{display:flex;align-items:center;gap:14px;border-bottom:3px solid #161210;padding-bottom:16px}
+.brand img{width:56px;height:56px;border-radius:50%;background:#fff;padding:3px;border:1px solid #161210}
+.brand b{font-family:"Anton";font-size:30px;letter-spacing:.04em;font-weight:400}
+.row{display:flex;flex-direction:column;gap:2px;border-bottom:1px solid #cfc2a8;padding-bottom:12px}
+.row small{font-weight:800;font-size:13px;letter-spacing:.16em}
+.row b{font-family:"Anton";font-weight:400;font-size:52px;line-height:1}
+.row b.r{color:#b3121e}
+.row em{font-family:"Instrument Serif";font-size:24px;color:#5e554a}
+.url{margin-top:auto;background:#161210;color:#f3ead8;font-weight:800;font-size:20px;letter-spacing:.06em;padding:14px 18px;text-align:center}
 </style>
 </head>
 <body>
-  <div class="top">
-    <div class="brand"><img src="../../logo.jpg" alt=""><div><b>PHARMAKAKSHA</b><span>Learn · Grow · Achieve</span></div></div>
-    <div class="url">rrb2026.pharmakaksha.com</div>
+  <div class="red">
+    <div class="kick">RRB · CEN 05/2026 · PHARMACIST BATCH</div>
+    <div class="big">118</div>
+    <div><h1>Pharmacist posts.<br>One CBT. One RRB.</h1><p class="it">Rank inside them, with Pharmakaksha.</p></div>
   </div>
-  <div class="board">
-    <div class="head"><span>RRB · CEN 05/2026 · PARAMEDICAL</span><span class="live">● PHARMACIST BATCH · LIVE</span></div>
-    <div class="body" id="b"></div>
+  <div class="side">
+    <div class="brand"><img src="../../logo.jpg" alt=""><b>PHARMAKAKSHA</b></div>
+    <div class="row"><small>INTRODUCTORY OFFER</small><b class="r">TRY DAY 1 FREE</b></div>
+    <div class="row"><small>FEE FROM</small><b>₹1,999 <em>· registrations close 31 Oct</em></b></div>
+    <div class="url">RRB2026.PHARMAKAKSHA.COM</div>
   </div>
-  <div class="row">
-    <div class="cell trial"><small>INTRODUCTORY OFFER</small><b>TRY DAY 1 FREE</b></div>
-    <div class="cell"><small>FARE FROM</small><b>₹1,999</b></div>
-    <div class="cell ok"><small>REGISTRATIONS CLOSE</small><b>31 OCT</b></div>
-  </div>
-<script>
-const tiles = (t, cls) => `<div class="flaps ${cls}">` + t.split(" ").map(w => `<span class="w">${[...w].map(c => `<span class="f">${c}</span>`).join("")}</span>`).join("") + `</div>`;
-document.getElementById("b").innerHTML = tiles("CRACK THE RRB PHARMACIST CBT", "") + tiles("RANK INSIDE THE 118", "amber");
-</script>
 </body>
 </html>
