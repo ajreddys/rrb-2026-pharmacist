@@ -12,7 +12,7 @@ Open `index.html` and find `const CONFIG` near the bottom. It holds the fee and 
 - **Countdown dates:** `MILESTONES`, just below `CONFIG`. The hero and sticky bar count down to the soonest upcoming one.
 - **Study plan:** the `PLAN` list further down, one entry per week.
 - **Links:** the register, chat, channel and email links are also written into the HTML, so they work even if the script fails. If you change one in `CONFIG`, change it in the HTML too (search for the old URL).
-- **Analytics:** `cfAnalyticsToken` is empty. Add `rrb2026.pharmakaksha.com` as a site in Cloudflare Web Analytics and paste its token. Don't reuse the AP site's token.
+- **Analytics:** `cfAnalyticsToken` holds the Cloudflare Web Analytics token for `rrb2026.pharmakaksha.com`. The beacon loads only on that hostname, so local previews aren't counted. Set it to `""` to turn analytics off.
 
 After 31 Oct (`regClose`) the page switches by itself: the status badge says closed, the free-trial card hides and the Register buttons become "Ask about the next batch" and open the WhatsApp chat.
 
