@@ -625,7 +625,7 @@ details ul{margin:0;padding:0 14px 14px 34px;color:var(--muted);display:flex;fle
 /* ===== Edit these before sharing. ===== */
 const CONFIG = {
   fee: 2999,          // standard fee per person, in ₹
-  code: "PKRRB2026",  // introductory code
+  code: "PKRRB2026",  // promo code
   codeOff: 500,       // ₹ off with the code
   groupMin: 4,        // group size for the group price
   groupOff: 1000,     // ₹ off per person in a group (does not combine with the code)
@@ -698,12 +698,12 @@ $("fees").innerHTML =
   `<div class="plans">` +
     `<div class="plan-c"><small>Fare · individual</small><div class="amt"><b>${inr(CONFIG.fee - CONFIG.codeOff)}</b>${was}</div>` +
       `<span class="save">Save ${inr(CONFIG.codeOff)}</span>` +
-      `<p>With code <button type="button" class="code" id="code">${CONFIG.code}<em>Copy</em></button></p></div>` +
+      `<p>With promo code <button type="button" class="code" id="code">${CONFIG.code}<em>Copy</em></button></p></div>` +
     `<div class="plan-c"><small>Fare · group of ${CONFIG.groupMin}+</small><div class="amt"><b>${inr(CONFIG.fee - CONFIG.groupOff)}</b>${was}</div>` +
       `<span class="save">Save ${inr(CONFIG.groupOff)} each</span>` +
       `<p>Per person</p></div>` +
   `</div>` +
-  `<p class="fine">Standard fee ${inr(CONFIG.fee)} per person. One offer per person: the code can't be combined with the group price.</p>`;
+  `<p class="fine">Standard fee ${inr(CONFIG.fee)} per person. One offer per person: the promo code can't be combined with the group price.</p>`;
 $("code").addEventListener("click", e => {
   const em = e.currentTarget.querySelector("em");
   navigator.clipboard?.writeText(CONFIG.code).then(() => { em.textContent = "Copied"; setTimeout(() => em.textContent = "Copy", 1500); }, () => {});
