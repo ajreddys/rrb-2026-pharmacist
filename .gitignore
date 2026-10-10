@@ -1,0 +1,3 @@
+# Source PDF and local scratch files stay out of the repo
+CEN_05_2026_PM.pdf
+.DS_Store

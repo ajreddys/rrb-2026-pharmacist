@@ -1,0 +1,824 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rrb2026.pharmakaksha.com/">
+<meta property="og:site_name" content="Pharmakaksha">
+<meta property="og:image" content="https://rrb2026.pharmakaksha.com/og-image.jpg?v=1">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Pharmakaksha: Crack the RRB Pharmacist CBT. 118 posts, CEN 05/2026. Try Day 1 free, fee from ₹1,999, registrations close 31 Oct.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://rrb2026.pharmakaksha.com/">
+<meta property="og:title" content="Pharmakaksha · RRB Pharmacist (CEN 05/2026) CBT batch">
+<meta property="og:description" content="118 posts. Try Day 1 free. Registrations close 31 Oct.">
+<link rel="icon" href="logo.jpg">
+<title>Pharmakaksha RRB Pharmacist Batch</title>
+<meta name="description" content="Pharmakaksha's online coaching for the Railway Recruitment Boards' Pharmacist (Entry Grade) computer-based test, CEN 05/2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: a railway-ticket hero, then single-column sections a phone user scrolls, with a sticky enrol bar. */
+:root{
+  --paper:#f5f7fb; --card:#ffffff; --ink:#14213a; --muted:#56627a; --line:#d7deea;
+  --navy:#22427a; --navy-ink:#ffffff; --gold:#a8791c; --gold-soft:#f6ecd4;
+  --ok:#1f7a4d; --warn:#b4471f; --bubble:#ffffff;
+  --display:"Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body:"Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  --mono:"IBM Plex Mono", ui-monospace, Consolas, monospace;
+  --r:14px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#0d1424; --card:#152038; --ink:#e8edf7; --muted:#9ba8c2; --line:#2a3858;
+  --navy:#8fb0e8; --navy-ink:#0d1424; --gold:#e2c27a; --gold-soft:#2c2614;
+  --ok:#6fd3a0; --warn:#ff9d7a; --bubble:#0d1424; color-scheme:dark;}}
+:root[data-theme="dark"]{
+  --paper:#0d1424; --card:#152038; --ink:#e8edf7; --muted:#9ba8c2; --line:#2a3858;
+  --navy:#8fb0e8; --navy-ink:#0d1424; --gold:#e2c27a; --gold-soft:#2c2614;
+  --ok:#6fd3a0; --warn:#ff9d7a; --bubble:#0d1424; color-scheme:dark;}
+
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font:400 1.0625rem/1.6 var(--body);margin:0}
+.wrap{max-width:760px;margin:0 auto;padding-inline:16px;padding-block:20px 120px;display:flex;flex-direction:column;gap:56px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;line-height:1.1}
+h2{font-size:clamp(1.6rem,4.5vw,2.1rem);font-weight:800;letter-spacing:-.01em}
+h3{font-size:1.15rem;font-weight:700}
+p{margin:0;max-width:65ch}
+.eyebrow{font:600 .75rem/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+section{display:flex;flex-direction:column;gap:18px}
+.lead{color:var(--muted)}
+a{color:var(--navy)}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:6px}
+
+/* Brand bar */
+.brand{display:flex;align-items:center;gap:12px;position:sticky;top:0;z-index:7;background:var(--paper);margin:-20px -16px 0;padding:10px 16px;border-bottom:1px solid var(--line)}
+.brand img{width:46px;height:46px;border-radius:50%;background:#fff;padding:3px;border:1px solid var(--line)}
+.brand b{font-family:var(--display);font-weight:800;font-size:1.15rem;letter-spacing:.02em;display:block}
+.brand span{font-size:.85rem;color:var(--muted)}
+
+/* Ticket hero */
+.ticket .eyebrow{font-size:.95rem;line-height:1.35;letter-spacing:.1em}
+.ticket{background:var(--card);border:1.5px solid var(--ink);border-radius:var(--r);position:relative;overflow:hidden}
+.ticket-head{background:var(--navy);color:var(--navy-ink);padding:14px 20px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font:600 .95rem/1.35 var(--mono);letter-spacing:.08em;text-transform:uppercase}
+@media (max-width:420px){.ticket-head{font-size:.9rem;letter-spacing:.03em;padding-inline:18px}}
+.ticket-body{padding:24px 20px 22px;display:flex;flex-direction:column;gap:20px}
+.ticket h1{font-size:clamp(2.1rem,7.5vw,3.4rem);font-weight:800;letter-spacing:-.02em}
+.ticket h1 em{font-style:normal;color:var(--gold)}
+.fields{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));border-top:1.5px dashed var(--line)}
+.field{padding:12px 0 2px;display:flex;flex-direction:column;gap:2px;min-width:0}
+.field small{font:600 .68rem/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.field strong{font:600 1rem/1.3 var(--mono);font-variant-numeric:tabular-nums}
+.perf{height:0;border-top:1.5px dashed var(--ink);position:relative;margin:0}
+.perf::before,.perf::after{content:"";position:absolute;top:-11px;width:20px;height:20px;border-radius:50%;background:var(--paper);border:1.5px solid var(--ink)}
+.perf::before{left:-11px}.perf::after{right:-11px}
+.countdown{padding:18px 20px 22px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px}
+.cd-wrap{display:flex;flex-direction:column;gap:8px}
+.cd-what{font:600 .75rem/1.3 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.cd-what b{color:var(--ink)}
+.cd{display:flex;gap:10px}
+.cd div{display:flex;flex-direction:column;align-items:center;min-width:52px}
+.cd b{font:600 1.9rem/1 var(--mono);font-variant-numeric:tabular-nums}
+.cd span{font:600 .65rem/1.6 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:#1f8f55;color:#fff;font:700 1rem/1 var(--body);padding:14px 20px;border-radius:999px;text-decoration:none;border:0;cursor:pointer}
+.btn:hover{filter:brightness(1.08)}
+.btn svg{width:20px;height:20px;fill:currentColor}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+.btn.ghost svg{fill:none;stroke:currentColor;stroke-width:2}
+.btn.ghost.chat svg{fill:currentColor;stroke:none}
+.trial{position:relative;overflow:hidden;background:linear-gradient(135deg,#ffd15c,#f0a630);color:#22180a;border-radius:16px;padding:20px;display:flex;flex-direction:column;gap:14px;box-shadow:0 10px 28px -12px rgba(240,166,48,.75)}
+.trial::after{content:"";position:absolute;right:-40px;top:-40px;width:130px;height:130px;border-radius:50%;background:rgba(255,255,255,.22)}
+.trial-top{display:flex;align-items:center;gap:14px;position:relative;z-index:1}
+.trial small{font:600 .72rem/1.2 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:#5a3e08}
+.trial h3{font:800 1.75rem/1.05 var(--display);letter-spacing:-.02em}
+.stamp{flex:none;width:62px;height:62px;border-radius:50%;border:2.5px dashed #22180a;display:grid;place-items:center;font:700 .82rem/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;transform:rotate(-14deg)}
+.trial ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;position:relative;z-index:1}
+.trial li{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.02rem}
+.trial li::before{content:"✓";flex:none;width:22px;height:22px;border-radius:50%;background:#22180a;color:#ffd15c;display:grid;place-items:center;font-size:.8rem}
+.trial .btn{background:#22180a;color:#fff;align-self:flex-start;position:relative;z-index:1}
+.tag.free{background:var(--ok);color:var(--paper)}
+.btn.icon{padding:12px;flex:none}
+.cta{display:flex;flex-wrap:wrap;gap:10px}
+.sticky .cta{flex-wrap:nowrap;flex:none;gap:8px}
+
+/* Facts strip */
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.fact{border-left:3px solid var(--gold);padding:4px 0 4px 14px}
+.fact b{display:block;font:700 1.7rem/1.1 var(--display)}
+.fact span{font-size:.92rem;color:var(--muted)}
+
+/* Official dates */
+.dates{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;border-top:1px solid var(--line)}
+.dates li{display:grid;grid-template-columns:minmax(118px,auto) 1fr;gap:4px 16px;padding:11px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.dates b{font:600 .95rem/1.3 var(--mono);font-variant-numeric:tabular-nums}
+.dates li.ours span::after{content:"Pharmakaksha";margin-left:8px;font:600 .62rem/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--gold);border:1px solid currentColor;border-radius:5px;padding:3px 5px;vertical-align:middle}
+.dates li.past{color:var(--muted)}
+.dates li.past b{text-decoration:line-through}
+.dates li.next{background:var(--gold-soft);margin:0 -10px;padding-inline:10px;border-radius:8px}
+
+/* Paper pattern */
+.pattern{display:flex;height:42px;border-radius:10px;overflow:hidden;border:1px solid var(--line)}
+.pattern div{display:flex;align-items:center;justify-content:center;font:600 .85rem var(--mono);color:var(--navy-ink);background:var(--navy);min-width:0;white-space:nowrap;overflow:hidden}
+.pattern div + div{border-left:2px solid var(--card);background:color-mix(in srgb,var(--navy) 55%,var(--card));color:var(--ink)}
+.pat-key{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:6px 18px}
+.pat-key li{display:flex;justify-content:space-between;gap:12px;border-bottom:1px dashed var(--line);padding:6px 0}
+.pat-key b{font:600 1rem var(--mono);font-variant-numeric:tabular-nums}
+
+/* Score calculator */
+.calc{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px;display:flex;flex-direction:column;gap:18px}
+.row{display:flex;flex-direction:column;gap:6px}
+.row label{display:flex;justify-content:space-between;gap:12px;font-weight:600}
+.row label output{font:600 1rem var(--mono);font-variant-numeric:tabular-nums;color:var(--navy)}
+input[type=range]{width:100%;accent-color:var(--navy);height:28px}
+.seg{display:flex;flex-wrap:wrap;gap:8px}
+.seg button{font:600 .9rem var(--body);padding:8px 14px;border-radius:999px;border:1.5px solid var(--line);background:transparent;color:var(--ink);cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--navy);color:var(--navy-ink);border-color:var(--navy)}
+.result{display:grid;grid-template-columns:auto 1fr;gap:6px 18px;align-items:center}
+.score{font:600 3rem/1 var(--mono);font-variant-numeric:tabular-nums}
+.score small{font-size:1rem;color:var(--muted)}
+.verdict{font-weight:700}
+.verdict.ok{color:var(--ok)}.verdict.no{color:var(--warn)}
+.meter{grid-column:1/-1;position:relative;height:14px;border-radius:999px;background:var(--line);margin-top:8px}
+.meter i{position:absolute;inset:0 auto 0 0;border-radius:999px;background:var(--navy);transition:width .25s}
+.meter u{position:absolute;top:-6px;bottom:-6px;width:3px;background:var(--gold);text-decoration:none}
+.meter-lab{grid-column:1/-1;display:flex;justify-content:space-between;font:600 .75rem var(--mono);color:var(--muted)}
+.note{font-size:.92rem;color:var(--muted)}
+
+/* Guessing bubbles */
+.guess{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.g{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px;display:flex;flex-direction:column;gap:10px}
+.bubbles{display:flex;gap:8px}
+.bubbles span{width:30px;height:30px;border-radius:50%;border:1.5px solid var(--ink);display:grid;place-items:center;font:600 .8rem var(--mono);background:var(--bubble)}
+.bubbles span.x{border-color:var(--line);color:var(--line);text-decoration:line-through}
+.g b{font:600 1.35rem var(--mono)}
+.g b.pos{color:var(--ok)}
+
+/* Pipeline */
+.steps{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.steps li{display:grid;grid-template-columns:36px 1fr;gap:14px;position:relative;padding-bottom:18px}
+.steps li:not(:last-child)::before{content:"";position:absolute;left:17px;top:36px;bottom:0;width:2px;background:var(--line)}
+.steps .n{width:36px;height:36px;border-radius:50%;border:1.5px solid var(--ink);display:grid;place-items:center;font:600 .9rem var(--mono);background:var(--card)}
+.steps li.here .n{background:var(--gold);border-color:var(--gold);color:#1a1405}
+.steps h3{font-size:1.05rem;padding-top:6px}
+.steps p{color:var(--muted);font-size:.97rem}
+.tag{display:inline-block;font:600 .68rem/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;background:var(--gold-soft);color:var(--gold);padding:5px 8px;border-radius:6px;margin-left:6px;vertical-align:middle}
+
+/* Subjects */
+.subjects{display:flex;flex-direction:column;border-top:1px solid var(--line)}
+details{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 2px;font:700 1.08rem var(--display)}
+summary small{font:600 .7rem var(--mono);letter-spacing:.08em;color:var(--muted);margin-left:auto;white-space:nowrap}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font:400 1.5rem/1 var(--mono);color:var(--gold);transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details ul{margin:0 0 16px;padding-left:20px;color:var(--muted);display:flex;flex-direction:column;gap:4px}
+
+/* Includes + batch */
+.incl{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.inc{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px;display:flex;flex-direction:column;gap:8px}
+.inc svg{width:28px;height:28px;stroke:var(--navy);fill:none;stroke-width:1.8}
+.inc p{color:var(--muted);font-size:.95rem}
+.batch{background:var(--card);border:1.5px solid var(--ink);border-radius:var(--r);padding:22px 20px;display:flex;flex-direction:column;gap:16px}
+.reg{display:inline-flex;align-items:center;gap:8px;align-self:flex-start;font:600 .9rem/1.2 var(--body);color:var(--ok);background:color-mix(in srgb,var(--ok) 12%,transparent);border:1px solid color-mix(in srgb,var(--ok) 40%,transparent);border-radius:999px;padding:7px 14px}
+.reg:empty{display:none}
+.reg::before{content:"";width:8px;height:8px;border-radius:50%;background:currentColor;flex:none;animation:pulse 1.6s ease-in-out infinite}
+.reg.shut{color:var(--warn);background:color-mix(in srgb,var(--warn) 12%,transparent);border-color:color-mix(in srgb,var(--warn) 40%,transparent)}
+.reg.shut::before{animation:none}
+.reg b{white-space:nowrap}
+@keyframes pulse{50%{opacity:.35}}
+.fees{display:flex;flex-direction:column;gap:20px}
+.plans{display:grid;grid-template-columns:1fr 1fr}
+.plan-c{display:flex;flex-direction:column;gap:10px;padding:4px 24px 4px 0}
+.plan-c + .plan-c{border-left:1px solid var(--line);padding:4px 0 4px 24px}
+.plan-c small{font:600 .7rem/1.2 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.amt{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.amt b{font:700 2.7rem/1 var(--display);letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.amt s{color:var(--muted);font-size:1rem}
+.save{font:600 .72rem/1 var(--mono);letter-spacing:.06em;color:var(--ok);border:1px solid currentColor;border-radius:999px;padding:5px 9px;align-self:flex-start}
+.plan-c p{font-size:.95rem;color:var(--muted)}
+.code{font:600 .9rem/1 var(--mono);letter-spacing:.08em;color:var(--ink);background:transparent;border:1px dashed var(--muted);border-radius:8px;padding:8px 10px;cursor:pointer;display:inline-flex;gap:10px;align-items:center;vertical-align:middle}
+.code em{font:600 .65rem/1 var(--mono);font-style:normal;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.code:hover{border-color:var(--ink)}
+.fine{font-size:.85rem;color:var(--muted);border-top:1px solid var(--line);padding-top:14px;max-width:none}
+@media (max-width:520px){.plans{grid-template-columns:1fr}.plan-c{padding:0 0 20px}.plan-c + .plan-c{border-left:0;border-top:1px solid var(--line);padding:20px 0 0}}
+.tba{display:inline-block;border:1.5px dashed var(--gold);color:var(--gold);padding:4px 10px;border-radius:8px;font:600 .9rem var(--mono)}
+.kv{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.kv div{display:flex;flex-direction:column;gap:2px;min-width:0}
+.kv small{font:600 .68rem/1.2 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.kv strong{font-weight:600}
+
+.site-foot{display:flex;flex-direction:column;gap:18px;border-top:1px solid var(--line);padding-top:24px}
+.social{display:flex;flex-direction:column;gap:12px}
+.social ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.social a{display:inline-flex;align-items:center;gap:8px;padding:9px 14px;border:1.5px solid var(--line);border-radius:999px;background:var(--card);color:var(--ink);text-decoration:none;font:600 .92rem/1 var(--body)}
+.social a:hover{border-color:var(--navy);color:var(--navy)}
+.social svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.contact{font-weight:600}
+.src{font-size:.85rem;color:var(--muted)}
+
+/* Sticky bar */
+.sticky{position:fixed;left:0;right:0;bottom:0;background:var(--card);border-top:1px solid var(--line);padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));display:flex;justify-content:center;z-index:5}
+.sticky-in{max-width:760px;width:100%;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.sticky-in span{font-size:.9rem;color:var(--muted);line-height:1.3}
+.sticky-in span b{color:var(--ink);font-family:var(--mono);font-variant-numeric:tabular-nums}
+@media (max-width:420px){.sticky-in span{font-size:.8rem}.sticky .btn{padding:12px 16px}.sticky .btn.icon{padding:12px}}
+/* Index bar */
+html{scroll-behavior:smooth}
+section{scroll-margin-top:calc(var(--bh,67px) + 76px)}
+.toc{position:sticky;top:var(--bh,67px);z-index:6;background:var(--paper);margin:0 -16px;padding:10px 16px;border-bottom:1px solid var(--line)}
+.toc ol{list-style:none;margin:0;padding:0;display:flex;gap:8px;overflow-x:auto;scrollbar-width:none}
+.toc ol::-webkit-scrollbar{display:none}
+.toc a{display:flex;align-items:center;gap:7px;white-space:nowrap;text-decoration:none;font:600 .9rem/1 var(--body);color:var(--ink);padding:9px 13px;border:1.5px solid var(--line);border-radius:999px;background:var(--card)}
+.toc a span{font:600 .72rem/1 var(--mono);color:var(--gold)}
+.toc a[aria-current="true"]{background:var(--navy);color:var(--navy-ink);border-color:var(--navy)}
+.toc a[aria-current="true"] span{color:inherit}
+
+/* Posts by RRB */
+.posts{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+.posts li{display:grid;grid-template-columns:1fr auto;gap:4px 12px;align-items:baseline}
+.posts span{font-weight:600;line-height:1.3}
+.posts small{font:400 .8rem var(--mono);color:var(--muted);white-space:nowrap;margin-left:4px}
+.posts b{font:600 1.15rem var(--mono);font-variant-numeric:tabular-nums}
+.posts i{grid-column:1/-1;height:6px;border-radius:999px;background:linear-gradient(90deg,var(--navy) var(--w),var(--line) var(--w))}
+.cats{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.cats div{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 8px;text-align:center;display:flex;flex-direction:column;gap:2px}
+.cats b{font:700 1.5rem/1 var(--display);font-variant-numeric:tabular-nums}
+.cats span{font:600 .68rem/1.2 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+
+.quals{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:10px;max-width:65ch}
+.quals li::marker{font:600 .95rem var(--mono);color:var(--gold)}
+.quals b{font-weight:700}
+.age{width:100%;border-collapse:collapse;font-size:.95rem}
+.age th,.age td{text-align:left;padding:9px 8px;border-bottom:1px solid var(--line)}
+.age th{font:600 .68rem/1.2 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.age td:not(:first-child){font-family:var(--mono);font-variant-numeric:tabular-nums}
+
+/* Sub-blocks inside a section */
+.block{display:flex;flex-direction:column;gap:14px;margin-top:14px}
+.block > h3{font-size:1.3rem}
+.callout{border-left:3px solid var(--warn);padding:4px 0 4px 14px;font-size:.97rem}
+.callout b{color:var(--warn)}
+
+/* Study plan */
+.legend{font-size:.95rem;color:var(--muted)}
+.legend .tag{margin:0 6px 0 0}
+.plan{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+.plan .phase{font:600 .75rem/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--gold);padding:14px 0 2px}
+.day{display:grid;grid-template-columns:78px 1fr;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:14px 16px}
+.day .dt{display:flex;flex-direction:column;gap:4px;font-family:var(--mono);font-variant-numeric:tabular-nums}
+.day .dt b{font:600 1.5rem/1 var(--mono)}
+.day .dt span{font:600 .68rem/1.3 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.day .bd{display:flex;flex-direction:column;gap:8px;min-width:0}
+.day ul{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:6px 14px}
+.day li{padding-left:14px;position:relative;line-height:1.35}
+.day li::before{content:"";position:absolute;left:0;top:.5em;width:6px;height:6px;border-radius:50%;background:var(--gold)}
+.day .gen{font-size:.93rem;color:var(--muted);border-top:1px dashed var(--line);padding-top:8px}
+.day .gen b{color:var(--ink);font-weight:600}
+.day .tags{display:flex;flex-wrap:wrap;gap:6px}
+.day .tags .tag{margin:0}
+.day.mock{background:var(--navy);border-color:var(--navy);color:var(--navy-ink)}
+.day.mock .dt span,.day.mock p{color:inherit;opacity:.85}
+.day.mock h3{font-size:1.2rem}
+.day.exam{border:1.5px solid var(--gold);background:var(--gold-soft)}
+.day.exam p{color:var(--muted)}
+.day.today{outline:3px solid var(--gold);outline-offset:2px}
+.now{font:600 .68rem/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;background:var(--gold);color:#1a1405;padding:4px 7px;border-radius:6px;align-self:flex-start}
+@media (max-width:420px){.day{grid-template-columns:62px 1fr;gap:12px;padding:12px}.cats{grid-template-columns:repeat(3,1fr)}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="brand">
+    <img src="logo.jpg" alt="" width="46" height="46">
+    <div><b>PHARMAKAKSHA</b><span>Learn · Grow · Achieve</span></div>
+  </header>
+
+  <!-- Hero: railway ticket -->
+  <article class="ticket" aria-labelledby="hero-title">
+    <div class="ticket-head"><span>RRB · CEN 05/2026 · CBT</span><span>Pharmacist batch</span></div>
+    <div class="ticket-body">
+      <p class="reg" role="status"></p>
+      <span class="eyebrow">Railway Recruitment Boards · Paramedical Categories</span>
+      <h1 id="hero-title">Crack the RRB Pharmacist CBT. <em>Rank inside the 118.</em></h1>
+      <p class="lead">Daily and weekly tests, full-length mock CBTs, notes and one-to-one sessions at weekends, built for one paper: the Pharmacist (Entry Grade) computer-based test under CEN 05/2026.</p>
+      <div class="fields">
+        <div class="field"><small>Post</small><strong>Pharmacist (Entry Grade)</strong></div>
+        <div class="field"><small>Pay</small><strong>₹29,200 · L5</strong></div>
+        <div class="field"><small>Paper</small><strong>100 Qs · 90 min</strong></div>
+        <div class="field"><small>Marking</small><strong>+1 / −⅓</strong></div>
+      </div>
+    </div>
+    <div class="perf" aria-hidden="true"></div>
+    <div class="countdown">
+      <div class="cd-wrap">
+        <span class="cd-what" id="cd-what">Next date</span>
+        <div class="cd" role="timer" aria-labelledby="cd-what">
+          <div><b id="cd-d">--</b><span>days</span></div>
+          <div><b id="cd-h">--</b><span>hrs</span></div>
+          <div><b id="cd-m">--</b><span>min</span></div>
+          <div><b id="cd-s">--</b><span>sec</span></div>
+        </div>
+      </div>
+      <a class="btn reglink" href="https://pharmakaksha.com" target="_blank" rel="noopener"><span>Register now</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+  </article>
+
+  <!-- Index: sticky chip bar, highlights the section in view -->
+  <nav class="toc" aria-label="On this page">
+    <ol>
+      <li><a href="#about"><span>A</span>About us</a></li>
+      <li><a href="#exam"><span>B</span>The exam</a></li>
+      <li><a href="#provide"><span>C</span>What we provide</a></li>
+      <li><a href="#topics"><span>D</span>Syllabus</a></li>
+      <li><a href="#plan"><span>E</span>Study plan</a></li>
+      <li><a href="#enrol"><span>→</span>Join</a></li>
+    </ol>
+  </nav>
+
+  <!-- A. About -->
+  <section id="about" aria-labelledby="about-h">
+    <span class="eyebrow">A · About us</span>
+    <h2 id="about-h">Pharmakaksha: a classroom for pharmacy exams</h2>
+    <p>Pharmakaksha is exam prep built for pharmacy. We turn a big syllabus into a daily plan you can follow, with the right topics, steady testing and honest feedback until you're ready for exam day.</p>
+    <p class="lead">This batch has one goal: a CBT score high enough to rank inside your RRB's Pharmacist vacancies, because only that many candidates are called for document verification.</p>
+    <p class="note">Visit our website: <a href="https://pharmakaksha.com" target="_blank" rel="noopener">pharmakaksha.com</a></p>
+  </section>
+
+  <!-- B. Exam -->
+  <section id="exam" aria-labelledby="exam-h">
+    <span class="eyebrow">B · About the exam</span>
+    <h2 id="exam-h">118 posts, one CBT, one RRB per candidate</h2>
+    <p class="lead">The Railway Recruitment Boards fill Pharmacist (Entry Grade) posts through a single-stage computer-based test (CBT), followed by document verification and a medical examination. RRB will announce the CBT dates on its website.</p>
+    <div class="facts">
+      <div class="fact"><b>118</b><span>Pharmacist posts across all 20 RRBs in this notice</span></div>
+      <div class="fact"><b>Level 5</b><span>Initial pay ₹29,200 (7th CPC)</span></div>
+      <div class="fact"><b>1 : 1</b><span>Called for document verification per vacancy, on CBT merit</span></div>
+    </div>
+
+    <div class="block">
+      <h3>Important dates</h3>
+      <ol class="dates" id="dates">
+        <li><b>15 Sep 2026</b><span>Online applications opened</span></li>
+        <li><b>14 Oct 2026</b><span>Last date to apply (23:59 hours)</span></li>
+        <li><b>16 Oct 2026</b><span>Last date to pay the application fee</span></li>
+        <li><b>17–26 Oct 2026</b><span>Correction window (₹250 per modification)</span></li>
+        <li class="ours"><b>20 Oct 2026</b><span>Batch starts · Day 1 free</span></li>
+        <li><b>27–31 Oct 2026</b><span>Scribe details window (eligible candidates)</span></li>
+        <li class="ours"><b>31 Oct 2026</b><span>Batch registrations close</span></li>
+        <li><b>To be announced</b><span>CBT dates, on rrb.indianrailways.gov.in</span></li>
+      </ol>
+      <p class="note">Apply only on the official site, <a href="https://rrb.indianrailways.gov.in/" target="_blank" rel="noopener">rrb.indianrailways.gov.in</a>. Pharmakaksha registration is separate from your RRB application.</p>
+    </div>
+
+    <div class="block">
+      <h3>Pharmacist posts by RRB</h3>
+      <div class="cats" aria-label="Posts by community">
+        <div><b>54</b><span>UR</span></div>
+        <div><b>15</b><span>OBC</span></div>
+        <div><b>19</b><span>SC</span></div>
+        <div><b>21</b><span>ST</span></div>
+        <div><b>9</b><span>EWS</span></div>
+      </div>
+      <ol class="posts">
+        <li><span>Chennai <small>SR</small></span><b>15</b><i style="--w:100%"></i></li>
+        <li><span>Mumbai <small>CR</small></span><b>12</b><i style="--w:80%"></i></li>
+        <li><span>Kolkata <small>ER 9 · CLW 1</small></span><b>10</b><i style="--w:66.7%"></i></li>
+        <li><span>Malda <small>ER 8 · SER 1</small></span><b>9</b><i style="--w:60%"></i></li>
+        <li><span>Ranchi <small>ECR 4 · SER 4</small></span><b>8</b><i style="--w:53.3%"></i></li>
+        <li><span>Prayagraj <small>BLW 3 · NCR 3 · NR 1</small></span><b>7</b><i style="--w:46.7%"></i></li>
+        <li><span>Ajmer <small>NWR</small></span><b>6</b><i style="--w:40%"></i></li>
+        <li><span>Bengaluru <small>SWR</small></span><b>6</b><i style="--w:40%"></i></li>
+        <li><span>Gorakhpur <small>NER</small></span><b>6</b><i style="--w:40%"></i></li>
+        <li><span>Guwahati <small>NFR</small></span><b>6</b><i style="--w:40%"></i></li>
+        <li><span>Patna <small>ECR</small></span><b>6</b><i style="--w:40%"></i></li>
+        <li><span>Ahmedabad <small>WR</small></span><b>5</b><i style="--w:33.3%"></i></li>
+        <li><span>Chandigarh <small>NR</small></span><b>5</b><i style="--w:33.3%"></i></li>
+        <li><span>Secunderabad <small>SCR</small></span><b>5</b><i style="--w:33.3%"></i></li>
+        <li><span>Muzaffarpur <small>ECR</small></span><b>4</b><i style="--w:26.7%"></i></li>
+        <li><span>Bhopal <small>WCR</small></span><b>2</b><i style="--w:13.3%"></i></li>
+        <li><span>Bilaspur <small>CR 1 · SECR 1</small></span><b>2</b><i style="--w:13.3%"></i></li>
+        <li><span>Siliguri <small>NFR</small></span><b>2</b><i style="--w:13.3%"></i></li>
+        <li><span>Bhubaneswar <small>ECoR</small></span><b>1</b><i style="--w:6.7%"></i></li>
+        <li><span>Jammu-Srinagar <small>RCF</small></span><b>1</b><i style="--w:6.7%"></i></li>
+      </ol>
+      <p class="callout"><b>You can choose only one RRB.</b> Merit lists are drawn RRB-wise, and more than one application leads to rejection of all of them and debarment. Check your RRB's category-wise break-up in Annexure B of the notice before you apply.</p>
+      <p class="note">Vacancies are provisional and may increase or decrease. Ex-servicemen and PwBD vacancies are counted within these figures.</p>
+    </div>
+
+    <div class="block">
+      <h3>Who can apply</h3>
+      <ol class="quals">
+        <li><b>B.Pharm (Allopathic)</b> from a Central or State Government recognised university or institute, <b>or Pharm.D</b>, and</li>
+        <li><b>Registered as a Pharmacist</b> under the Pharmacy Act, 1948.</li>
+      </ol>
+      <p class="note">You must hold the qualification by 14 Oct 2026; candidates awaiting final results are not eligible. This notice does not list D.Pharm. Medical standard C2 (distance vision 6/12, nil, with or without glasses).</p>
+      <table class="age">
+        <caption class="note" style="text-align:left;caption-side:bottom;padding-top:8px">Age 20–35 as on 01.01.2027. Further relaxations apply to PwBD, ex-servicemen, serving railway staff and some women candidates; see para 5.2 of the notice.</caption>
+        <thead><tr><th>Category</th><th>Born on or after</th><th>Born on or before</th></tr></thead>
+        <tbody>
+          <tr><td>UR / EWS</td><td>02.01.1992</td><td>01.01.2007</td></tr>
+          <tr><td>OBC (NCL) · +3 yrs</td><td>02.01.1989</td><td>01.01.2007</td></tr>
+          <tr><td>SC / ST · +5 yrs</td><td>02.01.1987</td><td>01.01.2007</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="block">
+      <h3>Application fee</h3>
+      <div class="kv">
+        <div><small>General / OBC / EWS</small><strong>₹500 · ₹400 refunded after you take the CBT</strong></div>
+        <div><small>SC, ST, ExSM, PwBD, women, transgender, minorities, EBC</small><strong>₹250 · fully refunded after you take the CBT</strong></div>
+      </div>
+      <p class="note">Refunds go to your Aadhaar-seeded bank account, less bank charges.</p>
+    </div>
+
+    <div class="block">
+      <h3>Selection process</h3>
+      <p class="lead">There is one written stage. Your CBT marks decide your rank within your RRB, and only as many candidates as there are vacancies are called for document verification, so clearing the qualifying mark is only the first goal.</p>
+      <ol class="steps">
+        <li class="here"><span class="n">1</span><div><h3>Computer-based test <span class="tag">This course</span></h3><p>100 MCQs in 90 minutes (120 minutes for eligible scribe users), ⅓ mark deducted per wrong answer. Qualifying marks: 40% UR/EWS, 30% OBC (NCL) and SC, 25% ST. Marks are normalised if the CBT runs in several shifts.</p></div></li>
+        <li><span class="n">2</span><div><h3>Document verification (1:1)</h3><p>Shortlisted RRB-wise at one candidate per vacancy, on CBT merit. Ties go to the older candidate, then alphabetically by given name.</p></div></li>
+        <li><span class="n">3</span><div><h3>Medical examination</h3><p>Medical standard C2, conducted by the Railway administration.</p></div></li>
+        <li><span class="n">4</span><div><h3>Empanelment and allotment</h3><p>Railway zone or unit is allotted by merit, your stated preferences and the vacancy position.</p></div></li>
+      </ol>
+    </div>
+
+    <div class="block">
+      <h3>The paper</h3>
+      <div class="pattern" role="img" aria-label="70 professional ability, 10 general awareness, 10 arithmetic and reasoning, 10 general science">
+        <div style="flex:70">Professional · 70</div><div style="flex:10">10</div><div style="flex:10">10</div><div style="flex:10">10</div>
+      </div>
+      <ul class="pat-key">
+        <li><span>Professional ability (pharmacy)</span><b>70</b></li>
+        <li><span>General awareness</span><b>10</b></li>
+        <li><span>Arithmetic, intelligence and reasoning</span><b>10</b></li>
+        <li><span>General science (up to Class 10)</span><b>10</b></li>
+      </ul>
+      <p class="note">One mark per question, four options each. RRB calls this split indicative; the paper may vary.</p>
+    </div>
+
+    <div class="block">
+      <h3 id="calc-h">What will your attempt score?</h3>
+      <p class="lead">Move the sliders to see your marks under the +1 / −⅓ rule and whether you clear your community's qualifying mark.</p>
+      <div class="calc">
+        <div class="row">
+          <label for="att">Questions attempted <output id="att-o">80</output></label>
+          <input type="range" id="att" min="0" max="100" value="80">
+        </div>
+        <div class="row">
+          <label for="cor">Answered correctly <output id="cor-o">55</output></label>
+          <input type="range" id="cor" min="0" max="80" value="55">
+        </div>
+        <div class="row">
+          <span style="font-weight:600">Community</span>
+          <div class="seg" role="group" aria-label="Community">
+            <button type="button" data-q="0.40" aria-pressed="true">UR / EWS · 40%</button>
+            <button type="button" data-q="0.30" aria-pressed="false">OBC / SC · 30%</button>
+            <button type="button" data-q="0.25" aria-pressed="false">ST · 25%</button>
+          </div>
+        </div>
+        <div class="result" aria-live="polite">
+          <div class="score"><span id="sc">46.67</span><small> / 100</small></div>
+          <div><div class="verdict ok" id="vd">Clears the qualifying mark</div><div class="note" id="vd2"></div></div>
+          <div class="meter" aria-hidden="true"><i id="bar"></i><u id="cut"></u></div>
+          <div class="meter-lab"><span>0</span><span id="cut-l">Qualifying 40</span><span>100</span></div>
+        </div>
+      </div>
+      <p class="note">With 118 posts spread over 20 RRBs, the score that gets a DV call is usually well above the qualifying mark. Aim for rank, not just the cut-off.</p>
+    </div>
+
+    <div class="block">
+      <h3 id="guess-h">When is a guess worth it?</h3>
+      <p class="lead">With four options and a ⅓ penalty, a blind guess earns nothing on average. Rule out even one option and every guess starts paying. We train elimination on every mock.</p>
+      <div class="guess">
+        <div class="g"><div class="bubbles"><span>A</span><span>B</span><span>C</span><span>D</span></div><span>Blind guess (1 in 4)</span><b>±0.00 per guess</b></div>
+        <div class="g"><div class="bubbles"><span class="x">A</span><span>B</span><span>C</span><span>D</span></div><span>One option ruled out (1 in 3)</span><b class="pos">+0.11 per guess</b></div>
+        <div class="g"><div class="bubbles"><span class="x">A</span><span>B</span><span class="x">C</span><span>D</span></div><span>Two ruled out (1 in 2)</span><b class="pos">+0.33 per guess</b></div>
+      </div>
+      <p class="note">Expected marks = 1 × P(correct) − ⅓ × P(wrong).</p>
+    </div>
+  </section>
+
+  <!-- C. What we provide -->
+  <section id="provide" aria-labelledby="inc-h">
+    <span class="eyebrow">C · What we provide</span>
+    <h2 id="inc-h">Inside the batch</h2>
+    <div class="incl">
+      <div class="inc"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4M9 15l2 2 4-4"/></svg><h3>Daily tests</h3><p>12 questions every day, Monday to Saturday, on that day's topics: easy, medium and difficult, marked +1 / −⅓.</p></div>
+      <div class="inc"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4M7 14h2M11 14h2M15 14h2M7 17h2M11 17h2"/></svg><h3>Weekly tests</h3><p>30 questions every Sunday on all of the week's topics: 10 easy, 10 medium and 10 difficult.</p></div>
+      <div class="inc"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="7" r="2"/><circle cx="12" cy="7" r="2"/><circle cx="18" cy="7" r="2"/><circle cx="6" cy="15" r="2"/><circle cx="12" cy="15" r="2"/><circle cx="18" cy="15" r="2"/></svg><h3>Mock tests</h3><p>Five full-length CBTs in the RRB pattern on an RRB-style interface: 100 questions, 90 minutes, 70 professional + 30 general.</p></div>
+      <div class="inc"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3h9l3 3v12H8z"/><path d="M5 6v15h11"/><path d="M11 9h6M11 12h6M11 15h4"/></svg><h3>PYQs</h3><p>Previous RRB Pharmacist questions to practise the exam's style and level.</p></div>
+      <div class="inc"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 13h7M9 17h5"/></svg><h3>Study notes</h3><p>Compact notes for each topic, plus quick sheets for general awareness, arithmetic, reasoning and science.</p></div>
+      <div class="inc"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h12v8H8l-4 3v-3H3z"/><path d="M15 9h6v8h-1v3l-4-3h-5v-4"/></svg><h3>One-to-one interaction</h3><p>One-to-one sessions with faculty at weekends, on selected slots, to clear your doubts subject by subject.</p></div>
+    </div>
+  </section>
+
+  <!-- D. Syllabus -->
+  <section id="topics" aria-labelledby="sub-h">
+    <span class="eyebrow">D · Syllabus</span>
+    <h2 id="sub-h">The official syllabus, grouped</h2>
+    <p class="lead">Professional ability covers the whole B.Pharm course. Tap a group to see the subjects RRB lists in Annexure C.</p>
+    <div class="subjects">
+      <details open><summary>Pharmaceutics <small>Professional</small></summary><ul><li>Pharmaceutics; Physical Pharmaceutics</li><li>Pharmaceutical Engineering; Industrial Pharmacy</li><li>Biopharmaceutics and Pharmacokinetics</li><li>Novel Drug Delivery System; Cosmetic Science</li></ul></details>
+      <details><summary>Pharmaceutical Chemistry <small>Professional</small></summary><ul><li>Pharmaceutical Inorganic Chemistry; Pharmaceutical Organic Chemistry</li><li>Medicinal Chemistry; Computer Aided Drug Design</li><li>Biochemistry</li></ul></details>
+      <details><summary>Pharmacology and life sciences <small>Professional</small></summary><ul><li>Human Anatomy and Physiology; Pathophysiology</li><li>Pharmacology; Experimental Pharmacology</li><li>Pharmaceutical Microbiology; Pharmaceutical Biotechnology</li><li>Cell and Molecular Biology; Remedial Biology</li></ul></details>
+      <details><summary>Pharmacognosy <small>Professional</small></summary><ul><li>Pharmacognosy and Phytochemistry</li><li>Herbal Drug Technology</li><li>Quality Control and Standardization of Herbals</li><li>Dietary Supplements and Nutraceuticals</li></ul></details>
+      <details><summary>Analysis and quality <small>Professional</small></summary><ul><li>Pharmaceutical Analysis; Instrumental Methods of Analysis</li><li>Advanced Instrumentation Techniques</li><li>Quality Assurance</li></ul></details>
+      <details><summary>Practice, law and others <small>Professional</small></summary><ul><li>Pharmacy Practice; Pharmacovigilance</li><li>Pharmaceutical Jurisprudence; Pharmaceutical Regulatory Science</li><li>Social and Preventive Pharmacy; Pharma Marketing Management</li><li>Biostatistics and Research Methodology; Remedial Mathematics</li><li>Computer Applications in Pharmacy; Environmental Sciences</li></ul></details>
+      <details><summary>General awareness <small>10 Qs</small></summary><ul><li>Current affairs; Indian geography, culture and history including the freedom struggle</li><li>Indian polity and constitution; Indian economy</li><li>Environmental issues; sports; scientific and technological developments</li></ul></details>
+      <details><summary>Arithmetic, intelligence and reasoning <small>10 Qs</small></summary><ul><li>Number systems, BODMAS, fractions, LCM/HCF, ratio, percentages, mensuration</li><li>Time and work, time and distance, interest, profit and loss, algebra, geometry, trigonometry, statistics</li><li>Analogies, series, coding-decoding, relationships, syllogism, Venn diagrams, directions</li><li>Data interpretation and sufficiency, statements and assumptions, analytical reasoning</li></ul></details>
+      <details><summary>General science <small>10 Qs</small></summary><ul><li>Physics, chemistry and life sciences up to Class 10 (CBSE)</li></ul></details>
+    </div>
+    <p class="note">Source: Annexure C of CEN 05/2026. We map every daily topic to it.</p>
+  </section>
+
+  <!-- E. Study plan (rows are built from PLAN in the script) -->
+  <section id="plan" aria-labelledby="plan-h">
+    <span class="eyebrow">E · Study plan</span>
+    <h2 id="plan-h">Week by week, 20 Oct to 13 Dec</h2>
+    <p class="lead">Professional subjects Monday to Saturday with a daily test, one general section each week, a weekly test every Sunday, then five full-length mock CBTs before the exam.</p>
+    <p class="legend"><span class="tag">Daily test</span> 12 questions on that day's topics, Monday to Saturday.</p>
+    <p class="legend"><span class="tag">Weekly test</span> Every Sunday. 30 questions on all of the week's topics.</p>
+    <ol class="plan" id="plan-list"></ol>
+    <p class="note">RRB has not announced the CBT dates yet. If the CBT comes earlier, we compress the plan and move the mocks forward.</p>
+  </section>
+
+  <!-- Batch -->
+  <section aria-labelledby="batch-h" id="enrol">
+    <span class="eyebrow">Batch details</span>
+    <h2 id="batch-h">Join the batch</h2>
+    <div class="batch">
+      <p class="reg" role="status"></p>
+      <div class="trial" id="trial">
+        <div class="trial-top">
+          <span class="stamp" aria-hidden="true">Free</span>
+          <div><small>Introductory offer</small><h3>Try Day 1 free</h3></div>
+        </div>
+        <ul>
+          <li>Day 1 study material</li>
+          <li>Day 1 daily test</li>
+          <li>A full-length mock test</li>
+        </ul>
+        <a class="btn reglink" href="https://pharmakaksha.com" target="_blank" rel="noopener"><span>Register to unlock</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+      <div class="fees" id="fees"></div>
+      <div class="kv">
+        <div><small>Mode</small><strong>Online tests + weekend one-to-one</strong></div>
+        <div><small>Batch starts</small><strong id="start">20 Oct 2026</strong></div>
+        <div><small>One-to-one sessions</small><strong>Weekends · selected slots</strong></div>
+        <div><small>CBT date</small><strong id="examdate">Awaited from RRB</strong></div>
+      </div>
+      <p class="lead">Register at <a class="reglink" href="https://pharmakaksha.com" target="_blank" rel="noopener">pharmakaksha.com</a>. Questions? Chat with us on WhatsApp or mail <a class="mail" href="mailto:support@pharmakaksha.com">support@pharmakaksha.com</a>. Follow our WhatsApp channel for batch updates and free practice questions.</p>
+      <div class="cta"><a class="btn reglink" href="https://pharmakaksha.com" target="_blank" rel="noopener"><span>Register now</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="btn ghost chat" href="https://wa.me/message/76WJAZO5A3NEB1" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5-4.5-.2-.2-1.2-1.6-1.2-3s.8-2.2 1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.2 1.4Z"/></svg>Chat</a>
+        <a class="btn ghost wa" href="https://www.whatsapp.com/channel/0029VbDs5dyIN9ipjEeNYg3x" target="_blank" rel="noopener">Join our channel</a>
+        <a class="btn ghost share" href="https://wa.me/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4M15.4 6.5l-6.8 4"/></svg>Share with a friend</a></div>
+    </div>
+  </section>
+
+  <footer class="site-foot" id="contact">
+    <div class="social">
+      <h3>Follow Pharmakaksha</h3>
+      <ul>
+        <li><a href="https://www.instagram.com/pharmakaksha" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg>Instagram</a></li>
+        <li><a href="https://www.facebook.com/pharmakaksha" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 21v-8h3l.5-3.5H14V7.8c0-1 .3-1.8 1.8-1.8h1.8V3a24 24 0 0 0-2.6-.1C12.4 2.9 10.5 4.5 10.5 7.4v2.1h-3V13h3v8z" fill="currentColor" stroke="none"/></svg>Facebook</a></li>
+        <li><a href="https://www.whatsapp.com/channel/0029VbDs5dyIN9ipjEeNYg3x" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8.5 8.5 0 1 1 8 18.7z"/></svg>WhatsApp</a></li>
+        <li><a href="https://t.me/pharmakaksha" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 4 3 11l6 2.2M21 4l-3 16-6.5-5L9 13.2M21 4 9 13.2v5.3l2.5-3.5"/></svg>Telegram</a></li>
+        <li><a href="https://www.youtube.com/@pharmakaksha_learn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="m10 9.5 5 2.5-5 2.5z" fill="currentColor"/></svg>YouTube</a></li>
+      </ul>
+    </div>
+    <p class="contact">Contact us: <a class="chat" href="https://wa.me/message/76WJAZO5A3NEB1" target="_blank" rel="noopener">WhatsApp</a> · <a class="mail" href="mailto:support@pharmakaksha.com">support@pharmakaksha.com</a></p>
+    <p class="src">Exam details are from the Railway Recruitment Boards' Centralised Employment Notice CEN 05/2026 (Paramedical Categories). Always confirm dates and vacancies on <a href="https://rrb.indianrailways.gov.in/" target="_blank" rel="noopener">rrb.indianrailways.gov.in</a>. Pharmakaksha is an independent coaching brand and is not affiliated with the Railway Recruitment Boards or Indian Railways.</p>
+  </footer>
+</div>
+
+<div class="sticky" role="region" aria-label="Enrol">
+  <div class="sticky-in">
+    <span id="st"><b id="st-d">--</b> days to <span id="st-l">the next date</span></span>
+    <div class="cta"><a class="btn ghost icon share" href="https://wa.me/" target="_blank" rel="noopener" aria-label="Share this page on WhatsApp" title="Share on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4M15.4 6.5l-6.8 4"/></svg></a><a class="btn reglink" href="https://pharmakaksha.com" target="_blank" rel="noopener"><span>Register now</span></a></div>
+  </div>
+</div>
+
+<script>
+/* ===== Edit these before sharing. ===== */
+const CONFIG = {
+  fee: 2999,          // standard fee per person, in ₹
+  code: "PKRRB2026",  // introductory code
+  codeOff: 500,       // ₹ off with the code
+  groupMin: 4,        // group size for the group price
+  groupOff: 1000,     // ₹ off per person in a group (does not combine with the code)
+  regClose: "2026-10-31T23:59:59+05:30", // batch registrations close at the end of this moment (IST)
+  batchStart: "20 Oct 2026",
+  exam: "",           // CBT start once RRB announces it, e.g. "2027-01-20T09:00:00+05:30"; "" = awaited
+  whatsapp: "https://www.whatsapp.com/channel/0029VbDs5dyIN9ipjEeNYg3x", // channel
+  chat: "https://wa.me/message/76WJAZO5A3NEB1",                       // chat to register
+  email: "support@pharmakaksha.com",
+  register: "https://pharmakaksha.com", // where "Register now" goes
+  url: "https://rrb2026.pharmakaksha.com/",
+  shareText: "RRB Pharmacist CBT (CEN 05/2026): 118 posts. Pharmakaksha's batch has daily tests, 5 full-length mock CBTs and a week-by-week plan:",
+  cfAnalyticsToken: ""  // Cloudflare Web Analytics token for rrb2026.pharmakaksha.com; "" turns it off
+};
+
+/* Dates the hero countdown and the sticky bar count down to, soonest first.
+   `short` is the label in the sticky bar. The CBT is added from CONFIG.exam. */
+const MILESTONES = [
+  { at: "2026-10-14T23:59:59+05:30", label: "Last date to apply on the RRB site", short: "apply on RRB site" },
+  { at: "2026-10-16T23:59:59+05:30", label: "Last date to pay the RRB fee", short: "RRB fee deadline" },
+  { at: "2026-10-20T00:00:00+05:30", label: "Batch starts · Day 1 free", short: "batch start" },
+  { at: CONFIG.regClose, label: "Batch registrations close", short: "registration close" }
+];
+
+const $ = id => document.getElementById(id);
+// The index bar sticks just below the brand header, so track the header's height.
+const brand = document.querySelector(".brand");
+new ResizeObserver(() => document.documentElement.style.setProperty("--bh", brand.offsetHeight + "px")).observe(brand);
+
+const open = Date.now() <= Date.parse(CONFIG.regClose);
+const closeDay = new Date(CONFIG.regClose).toLocaleDateString("en-IN", { day: "numeric", month: "short", timeZone: "Asia/Kolkata" });
+document.querySelectorAll(".reg").forEach(r => {
+  r.innerHTML = `<span>${open ? "Registrations are open; close on" : "Registrations closed on"} <b>${closeDay}</b></span>`;
+  r.classList.toggle("shut", !open);
+});
+
+const inr = n => "₹" + n.toLocaleString("en-IN");
+const was = `<s>${inr(CONFIG.fee)}</s>`;
+$("fees").innerHTML =
+  `<div class="plans">` +
+    `<div class="plan-c"><small>Individual</small><div class="amt"><b>${inr(CONFIG.fee - CONFIG.codeOff)}</b>${was}</div>` +
+      `<span class="save">Save ${inr(CONFIG.codeOff)}</span>` +
+      `<p>With code <button type="button" class="code" id="code">${CONFIG.code}<em>Copy</em></button></p></div>` +
+    `<div class="plan-c"><small>Bulk registration (${CONFIG.groupMin}+)</small><div class="amt"><b>${inr(CONFIG.fee - CONFIG.groupOff)}</b>${was}</div>` +
+      `<span class="save">Save ${inr(CONFIG.groupOff)} each</span>` +
+      `<p>Per person</p></div>` +
+  `</div>` +
+  `<p class="fine">Standard fee ${inr(CONFIG.fee)} per person. One offer per person: the code can't be combined with the bulk registration price.</p>`;
+$("code").addEventListener("click", e => {
+  const em = e.currentTarget.querySelector("em");
+  navigator.clipboard?.writeText(CONFIG.code).then(() => { em.textContent = "Copied"; setTimeout(() => em.textContent = "Copy", 1500); }, () => {});
+});
+$("start").textContent = CONFIG.batchStart;
+if (CONFIG.exam) $("examdate").textContent = new Date(CONFIG.exam).toLocaleDateString("en-IN", { day: "2-digit", month: "short", year: "numeric", timeZone: "Asia/Kolkata" });
+
+// Links are also written into the HTML, so they work even if this script doesn't run.
+document.querySelectorAll("a.wa").forEach(a => a.href = CONFIG.whatsapp);
+document.querySelectorAll("a.chat").forEach(a => a.href = CONFIG.chat);
+document.querySelectorAll("a.mail").forEach(a => { a.href = "mailto:" + CONFIG.email; a.textContent = CONFIG.email; });
+document.querySelectorAll("a.share").forEach(a => a.href = "https://wa.me/?text=" + encodeURIComponent(CONFIG.shareText + " " + CONFIG.url));
+document.querySelectorAll("a.reglink").forEach(a => {
+  if (open) { a.href = CONFIG.register; return; }
+  // After registrations close, the buttons ask about the next batch instead.
+  a.href = CONFIG.chat;
+  const label = a.querySelector("span");
+  if (label) label.textContent = "Ask about the next batch";
+});
+if (!open) $("trial").hidden = true;
+
+// Privacy-friendly analytics: no cookies, no personal data. Loads only on the live site.
+if (CONFIG.cfAnalyticsToken && location.hostname === new URL(CONFIG.url).hostname) {
+  const b = document.createElement("script");
+  b.defer = true; b.src = "https://static.cloudflareinsights.com/beacon.min.js";
+  b.dataset.cfBeacon = JSON.stringify({ token: CONFIG.cfAnalyticsToken });
+  document.head.appendChild(b);
+}
+
+// Countdown to the soonest upcoming date; the CBT joins once CONFIG.exam is set.
+const targets = MILESTONES.concat(CONFIG.exam ? [{ at: CONFIG.exam, label: "Pharmacist CBT", short: "the CBT" }] : [])
+  .map(t => ({ ...t, ms: Date.parse(t.at) })).sort((a, b) => a.ms - b.ms);
+function tick(){
+  const now = Date.now(), t = targets.find(x => x.ms > now);
+  if (!t) {
+    $("cd-what").innerHTML = "CBT date: <b>awaited from RRB</b>";
+    $("st").textContent = "RRB Pharmacist CBT · dates awaited";
+    return false;
+  }
+  const ms = t.ms - now;
+  const d = Math.floor(ms / 864e5), h = Math.floor(ms / 36e5) % 24, m = Math.floor(ms / 6e4) % 60, s = Math.floor(ms / 1e3) % 60;
+  $("cd-what").innerHTML = `Countdown to <b>${t.label}</b>`;
+  $("cd-d").textContent = d; $("cd-h").textContent = String(h).padStart(2, "0"); $("cd-m").textContent = String(m).padStart(2, "0");
+  $("cd-s").textContent = String(s).padStart(2, "0");
+  $("st-d").textContent = d; $("st-l").textContent = t.short;
+  return true;
+}
+if (tick()) { const iv = setInterval(() => { if (!tick()) clearInterval(iv); }, 1000); }
+
+// Official dates: grey out the past ones and highlight the next.
+(() => {
+  const today = new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Kolkata" });
+  const rows = [...$("dates").children];
+  // Last day of each row above, in the same order.
+  const ends = ["2026-09-15", "2026-10-14", "2026-10-16", "2026-10-26", "2026-10-20", "2026-10-31", "2026-10-31", ""];
+  let marked = false;
+  rows.forEach((li, i) => {
+    if (ends[i] && ends[i] < today) li.classList.add("past");
+    else if (!marked) { li.classList.add("next"); marked = true; }
+  });
+})();
+
+// Score calculator: +1 right, −1/3 wrong.
+let q = 0.40;
+const att = $("att"), cor = $("cor");
+const r2 = x => String(Math.round(x * 100) / 100);
+function calc(){
+  const a = +att.value;
+  cor.max = a; if (+cor.value > a) cor.value = a;
+  const c = +cor.value, w = a - c, s = c - w / 3, cut = q * 100;
+  $("att-o").textContent = a; $("cor-o").textContent = c;
+  $("sc").textContent = r2(s);
+  const pass = s >= cut;
+  const vd = $("vd"); vd.textContent = pass ? "Clears the qualifying mark" : "Below the qualifying mark";
+  vd.className = "verdict " + (pass ? "ok" : "no");
+  $("vd2").textContent = `${c} right, minus ⅓ × ${w} wrong = ${r2(w / 3)}. ` + (pass ? `${r2(s - cut)} marks above the qualifying mark.` : `Need ${r2(cut - s)} more marks.`);
+  $("bar").style.width = Math.max(0, s) + "%";
+  $("cut").style.left = cut + "%";
+  $("cut-l").textContent = "Qualifying " + cut;
+}
+att.addEventListener("input", calc); cor.addEventListener("input", calc);
+document.querySelectorAll(".seg button").forEach(b => b.addEventListener("click", () => {
+  document.querySelectorAll(".seg button").forEach(x => x.setAttribute("aria-pressed", x === b));
+  q = +b.dataset.q; calc();
+}));
+calc();
+
+/* ===== Study plan. One entry per row, in order. =====
+   { phase: "..." }                                         section label
+   { week: n, from, to, topics: [...], general: "..." }     Mon–Sat topics + Sunday weekly test (to = the Sunday)
+   { mocks: true, from, note }                              mock CBT stretch
+   { exam: true }                                           the CBT (uses CONFIG.exam when set)        */
+const PLAN = [
+  { phase: "Phase 1 · Concepts + daily and weekly tests" },
+  { week: 1, from: "2026-10-20", to: "2026-10-25", free: true,
+    topics: ["Human Anatomy and Physiology", "Pharmaceutics: dosage forms, posology, incompatibilities", "Pharmaceutical Inorganic Chemistry"],
+    general: "Arithmetic: number systems, BODMAS, fractions, LCM and HCF" },
+  { week: 2, from: "2026-10-26", to: "2026-11-01",
+    topics: ["Pharmaceutical Organic Chemistry", "Biochemistry", "Pharmaceutical Analysis: titrimetry, errors, limit tests"],
+    general: "Reasoning: analogies, series, coding-decoding" },
+  { week: 3, from: "2026-11-02", to: "2026-11-08",
+    topics: ["Physical Pharmaceutics: solubility, micromeritics, rheology, HLB", "Pharmaceutical Microbiology", "Pathophysiology"],
+    general: "General science: physics and chemistry to Class 10" },
+  { week: 4, from: "2026-11-09", to: "2026-11-15",
+    topics: ["Pharmacology: general, ANS, CNS", "Pharmacology: CVS, renal, blood", "Pharmaceutical Engineering"],
+    general: "Arithmetic: percentages, ratio, profit and loss, interest" },
+  { week: 5, from: "2026-11-16", to: "2026-11-22",
+    topics: ["Pharmacology: endocrine, chemotherapy, toxicology", "Medicinal Chemistry", "Pharmacognosy and Phytochemistry"],
+    general: "General awareness: history, geography, polity" },
+  { week: 6, from: "2026-11-23", to: "2026-11-29",
+    topics: ["Industrial Pharmacy and Quality Assurance", "Biopharmaceutics and Pharmacokinetics", "Instrumental Methods of Analysis", "Herbal Drug Technology; QC of herbals"],
+    general: "Reasoning: syllogism, Venn diagrams, directions, relationships" },
+  { week: 7, from: "2026-11-30", to: "2026-12-06",
+    topics: ["Pharmaceutical Jurisprudence and Regulatory Science", "Pharmacy Practice and Pharmacovigilance", "Social and Preventive Pharmacy; Pharma Marketing"],
+    general: "Arithmetic: time and work, time and distance, mensuration" },
+  { week: 8, from: "2026-12-07", to: "2026-12-13",
+    topics: ["Novel Drug Delivery System; Cosmetic Science", "Biotechnology; Cell and Molecular Biology", "Biostatistics; CADD; Computer Applications", "Experimental Pharmacology; Nutraceuticals; Advanced Instrumentation"],
+    general: "General awareness: economy, environment, science and current affairs" },
+  { phase: "Phase 2 · Full-length mock CBTs" },
+  { mocks: true, from: "2026-12-14", note: "Five full-length mocks in the RRB pattern, with revision between them. Dates are fixed once RRB announces the CBT schedule." },
+  { phase: "Exam" },
+  { exam: true }
+];
+
+const ist = d => new Date(d + "T00:00:00+05:30");
+const fmt = (d, o) => ist(d).toLocaleDateString("en-IN", { timeZone: "Asia/Kolkata", ...o });
+const todayIST = new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Kolkata" });
+const span = (a, b) => `${fmt(a, { day: "numeric" })}${fmt(a, { month: "short" }) === fmt(b, { month: "short" }) ? "" : " " + fmt(a, { month: "short" })}–${fmt(b, { day: "numeric", month: "short" })}`;
+
+$("plan-list").innerHTML = PLAN.map(r => {
+  if (r.phase) return `<li class="phase">${r.phase}</li>`;
+  if (r.week) {
+    const here = r.from <= todayIST && todayIST <= r.to;
+    return `<li class="day${here ? " today" : ""}"><div class="dt"><b>WK ${r.week}</b><span>${span(r.from, r.to)}</span></div><div class="bd">` +
+      (here ? `<span class="now">This week</span>` : "") +
+      `<ul>${r.topics.map(t => `<li>${t}</li>`).join("")}</ul>` +
+      `<p class="gen"><b>General:</b> ${r.general}</p>` +
+      `<div class="tags"><span class="tag">Daily tests</span><span class="tag">Weekly test · Sun ${fmt(r.to, { day: "numeric", month: "short" })}</span>` +
+      (r.free ? `<span class="tag free">Day 1 free · ${fmt(r.from, { day: "numeric", month: "short" })}</span>` : "") + `</div></div></li>`;
+  }
+  if (r.mocks) return `<li class="day mock"><div class="dt"><b>×5</b><span>From ${fmt(r.from, { day: "numeric", month: "short" })}</span></div><div class="bd"><h3>Mock CBTs 1–5</h3><p>${r.note}</p></div></li>`;
+  if (r.exam) {
+    const when = CONFIG.exam ? new Date(CONFIG.exam).toLocaleDateString("en-IN", { day: "2-digit", month: "short", timeZone: "Asia/Kolkata" }) : "TBA";
+    return `<li class="day exam"><div class="dt"><b>${when}</b><span>RRB CBT</span></div><div class="bd"><h3>Pharmacist CBT</h3><p>100 MCQs · 90 min · +1 / −⅓. ${CONFIG.exam ? "" : "Dates will be announced on rrb.indianrailways.gov.in."}</p></div></li>`;
+  }
+  return "";
+}).join("");
+
+// The plan rows shift the page after load, so re-land on a #section link.
+try { if (location.hash) document.querySelector(location.hash)?.scrollIntoView({ behavior: "instant" }); } catch (e) {}
+
+// Index: mark the chip for the section currently in view.
+const chips = [...document.querySelectorAll(".toc a")];
+const spy = new IntersectionObserver(es => es.forEach(e => {
+  if (!e.isIntersecting) return;
+  chips.forEach(c => {
+    const on = c.hash === "#" + e.target.id;
+    c.setAttribute("aria-current", on);
+    if (on) { const ol = c.closest("ol"), cr = c.getBoundingClientRect(), or = ol.getBoundingClientRect();
+      if (cr.left < or.left || cr.right > or.right) ol.scrollBy({ left: cr.left - or.left - 8 }); }
+  });
+}), { rootMargin: "-40% 0px -55% 0px" });
+chips.forEach(c => { const t = document.querySelector(c.hash); if (t) spy.observe(t); });
+</script>
+</body>
+</html>
