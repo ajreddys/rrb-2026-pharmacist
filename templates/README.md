@@ -4,7 +4,6 @@ Alternative designs for a Pharmakaksha batch page. Each is a complete, single-fi
 
 | File | Look |
 | --- | --- |
-| `edtech-app.html` | Modern study app: white and indigo-violet, gradient hero, rounded cards, a timeline, a donut chart, an RRB search box and pricing cards. Follows the phone's light or dark mode. |
 | `departure-board.html` | Station departure board: black and amber, split-flap tiles, live clock, DEPARTED / BOARDING statuses. Dark only. |
 | `ticket.html` | Railway ticket, the same style as the AP brochure (apur26.pharmakaksha.com). Light and dark. |
 

@@ -51,7 +51,7 @@ The DNS record (Type `CNAME`, Host `rrb26`, Value `ajreddys.github.io`) is in pl
 | `CNAME` | The custom domain `rrb26.pharmakaksha.com` |
 | `.nojekyll` | Tells GitHub Pages to serve the files as they are |
 | `.github/workflows/deploy.yml` | Deploys the site files to GitHub Pages |
-| `templates/` | Alternative designs (modern ed-tech app, departure board, railway ticket), not deployed. See `templates/README.md` for reusing one in a new project |
+| `templates/` | Alternative designs (departure board, railway ticket), not deployed. See `templates/README.md` for reusing one in a new project |
 | `marketing/` | WhatsApp Status image, plus the HTML sources and render script for both images (not deployed) |
 
 ## Source
